@@ -7,7 +7,6 @@ from jinja2 import Template
 app = Flask(__name__)
 
 
-
 @app.route('/')
 def view_resume():
     with open('resume.yaml', 'r+') as f:
@@ -23,7 +22,7 @@ def view_resume():
 
     with open('index.html', 'w+') as f:
         f.write(t.render(resume=resume))
-        
+
     return render_template('resume.html.j2', resume=resume)
 
 
