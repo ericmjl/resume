@@ -1,0 +1,129 @@
+<!doctype html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <!-- FontAwesome embed -->
+    <script src="https://use.fontawesome.com/cb9dbe8e41.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="name-contact-row">
+            <div class="col-12" id="name-contact-col">
+                <h1 align="center">
+                    {{ resume['details']['given_name'] }}
+                    {% if resume['details']['middle_name'] %}
+                        {{ resume['details']['middle_name'] }}
+                    {% endif %}
+                    {{ resume['details']['surname'] }}
+                </h1>
+                <p align="center">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="{{ resume['contact']['email']}}">Email</a>
+                    |
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:{{ resume['contact']['phone'] }}">{{ resume['contact']['phone'] }}</a>
+                    |
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <a href="http://www.linkedin.com/in/yourusername">LinkedIn</a>
+                    |
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    <a href="https://github.com/{{ resume['contact']['github'] }}">GitHub</a>
+                    |
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <a href="{{ resume['contact']['website'] }}">Personal Website</a>
+                    |
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    {{ resume['contact']['location'] }}
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="skills-row">
+            <div class="col-12" id="skills-col">
+                <h2>
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    Skills
+                </h2>
+                <ul>
+                    {% for skill in resume['skills'] %}
+                        <li>
+                            <b>{{ skill['type']}}:</b> {{ skill['text'] }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="experience-row">
+            <div class="col-12">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    Experience
+                </h2>
+            </div>
+            <div class="container" id="experience-details">
+                {% for experience in resume['experience'] %}
+                <div class="row" id="{{ experience['company']}}-title-row">
+                    <div class="col-9">
+                        <p align="left">
+                            <b>{{ experience['company'] }}, {{ experience['title'] }}, {{ experience['location'] }}</b>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p align="right">
+                            <b>{{ experience['timeperiod'] }}</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="row" id="{{ experience['company']}}-data-row">
+                    <div class="col-12" id="{{ experience['company']}}-data-col">
+                        {{ experience['description'] }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="education-row">
+            <div class="col-12" id="education-title-row">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    Education
+                </h2>
+            </div>
+            <div class="container">
+                {% for edu in resume['education'] %}
+                    <div class="row" id="{{ edu['degree'] }}-row">
+                        <div class="col-9">
+                            <p align="left"><b>{{ edu['degree'] }}</b>, {{ edu['department'] }}, {{ edu['school'] }}, {{ edu['location'] }}</p>
+                        </div>
+                        <div class="col-3">
+                            <p align="right">
+                                <b>{{ edu['timeperiod'] }}</b>
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="publications-row">
+            <div class="col-12" id="publications-title-row">
+                <h2><i class="fa fa-bookmark"></i> Publications</h2>
+                <ul>
+                    {% for pub in resume['publications'] %}
+                        <li>
+                            {{ pub['title'] }}. <i>{{ pub['journal'] }}</i>  ({{ pub['year'] }}). <a href="{{ pub['url'] }}">[link]</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

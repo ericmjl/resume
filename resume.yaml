@@ -1,0 +1,121 @@
+details:
+    given_name: Eric
+    middle_name: J.
+    surname: Ma
+
+contact:
+    phone: 857-209-1375
+    email: http://shortwhale.com/ericmjl
+    website: https://ericmjl.github.io/
+    location: North Quincy, MA
+    github: ericmjl
+    linkedin: https://www.linkedin.com/in/ericmjl
+
+experience:
+    - company: Novartis Institutes for Biomedical Research (NIBR)
+      title: Investigator I
+      location: Cambridge MA
+      timeperiod: September 2017-Present
+      # Every "description" field should be written as Markdown.
+      description: |
+        - Investigator in the Scientific Data Analysis team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
+        - Performed internal consulting projects and launched new initiatives for NIBR.
+        - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
+        - Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting.
+
+    - company: Insight Data Science
+      title: Health Data Science Fellow
+      location: Boston MA
+      timeperiod: June 2017-August 2017
+      description: |
+       - Built [Flu Forecaster](https://fluforecaster.herokuapp.com), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
+        - Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.
+        - Developed interactive blog post using Flask and Bootstrap, and deployed to Heroku and GitHub.
+        - Led peer workshops on [web development](https://github.com/ericmjl/minimal-flask-example), deep learning and [code style](https://github.com/ericmjl/pycodestyle-tutorial).
+
+    - company: Massachusetts Institute of Technology
+      title: ScD Candidate
+      location: Cambridge MA
+      timeperiod: August 2011-May 2017
+      description: |
+        - Developed a scalable, network-based phylogenetic heuristic algorithm for detecting reassortant influenza viruses using 18,632 fully sequenced virus genomes that improved our capacity to detect reassortment events by two orders of magnitude.
+        - The algorithm was used in a lead-author study (published in [PNAS](http://www.pnas.org/content/113/19/5335.full)) providing systematic evidence that genome shuffling is important for host switching, and a co-authored study (published in [Ecology Letters](http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract)) that showed that reassortment is a strategy for viral gene persistence in wild animal reservoirs.
+        - Contributed [reproducible data analysis](https://github.com/runstadler-lab/Seal-H3N8-Image-Analysis) for colleagues through fluorescent image quantification and genomic analysis in studies that refuted binding properties of novel influenza viruses.
+        - Performed [Bayesian statistical modelling](https://github.com/ericmjl/mia-stats/blob/master/sterilization/sterilization.ipynb) for colleagues testing the efficacy of phone sterilization tools.
+        - Delivered tutorials and talks on Network Analysis and Bayesian statistical methods at annual Python conferences, including PyCon, SciPy, and PyData.
+
+    - company: The University of British Columbia
+      title: Undergraduate Researcher
+      location: Vancouver BC
+      timeperiod: June 2006-May 2010
+      description: |
+        - Investigated the role of T cells in intestinal inflammation and fibrosis in a Salmonella typhimurium-induced model of gut inflammation, leading to First Prize Poster ([Rising Stars of Research 2008](https://www.evernote.com/l/AANJS_A9iKZAMLGYqJDduTxiiI2ZNf43zHM)) and Best Talk (Multidisciplinary Undergraduate Research Conference 2009) awards.
+        - Co-founded the [first UBC International Genetically Engineered Machines (iGEM) team](http://2009.igem.org/Team:British_Columbia), where we achieved a Gold status standing in our first year of competition.
+        - Served as a [Peer Academic Coach](https://science.ubc.ca/students/spac), guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.
+
+education:
+    - degree: Sc.D.
+      school: Massachusetts Institute of Technology
+      department: Department of Biological Engineering
+      location: Cambridge MA
+      timeperiod: August 2011-May 2017
+
+    - degree: B.Sc.
+      school: The University of British Columbia
+      department: Integrated Sciences
+      location: Cambridge MA
+      timeperiod: June 2006-May 2010
+
+skills:
+    - type: Languages and Tools
+      text: Python, HTML, CSS, bash scripting, git, Illustrator, Indesign, Photoshop
+
+    - type: Packages
+      text: Pandas, PyMC3 (Bayesian statistics), Flask, scikit-learn, scikit-image, Keras, NetworkX, Mesa
+
+    - type: ML/Stats
+      text: Network science, variational autoencoders, random forests, Bayesian inference, graphical models, agent-based models
+
+    - type: Life Sciences
+      text: Microbiology, virology, biochemistry, molecular biology
+
+publications:
+    - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
+      journal: Emerging Infectious Diseases
+      year: 2017
+
+    - title: Reticulate evolution is favored in influenza niche switching
+      url: http://www.pnas.org/content/113/19/5335.full
+      journal: PNAS
+      year: 2016
+
+    - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
+      url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
+      journal: Ecology Letters
+      year: 2016
+
+    - title: Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential
+      url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
+      journal: PLOS Pathogens
+      year: 2016
+
+    - title: New England harbor seal H3N8 influenza virus retains avian-like receptor specificity
+      url: https://www.nature.com/articles/srep21428
+      journal: Scientific Reports
+      year: 2016
+
+    - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
+      url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
+      journal: Infection, Genetics and Evolution
+      year: 2016
+
+    - title: "Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds"
+      url: https://scholar.google.com/scholar?cluster=1735436224656405277&hl=en&oi=scholarr
+      journal: Integrative and Comparative Biology
+      year: 2016
+
+    - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
+      url: https://link.springer.com/article/10.1007/s11262-014-1162-9
+      journal: Virus Genes
+      year: 2015
