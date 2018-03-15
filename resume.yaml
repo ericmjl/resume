@@ -12,6 +12,7 @@ contact:
     linkedin: https://www.linkedin.com/in/ericmjl
 
 experience:
+    # Use this entry as an example that can be copied/pasted.
     - company: Novartis Institutes for Biomedical Research (NIBR)
       title: Investigator I
       location: Cambridge MA
