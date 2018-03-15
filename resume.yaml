@@ -18,8 +18,8 @@ experience:
       timeperiod: September 2017-Present
       # Every "description" field should be written as Markdown.
       description: |
-        - Investigator in the Scientific Data Analysis team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
-        - Performed internal consulting projects and launched new initiatives for NIBR.
+        - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
+        - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
         - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
         - Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting.
 
@@ -80,15 +80,15 @@ skills:
       text: Microbiology, virology, biochemistry, molecular biology
 
 publications:
-    - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
-      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
-      journal: Emerging Infectious Diseases
-      year: 2017
-
     - title: Reticulate evolution is favored in influenza niche switching
       url: http://www.pnas.org/content/113/19/5335.full
       journal: PNAS
       year: 2016
+
+    - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
+      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
+      journal: Emerging Infectious Diseases
+      year: 2017
 
     - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
       url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
@@ -105,6 +105,11 @@ publications:
       journal: Scientific Reports
       year: 2016
 
+    - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
+      url: https://link.springer.com/article/10.1007/s11262-014-1162-9
+      journal: Virus Genes
+      year: 2015
+
     - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
       url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
       journal: Infection, Genetics and Evolution
@@ -114,8 +119,3 @@ publications:
       url: https://scholar.google.com/scholar?cluster=1735436224656405277&hl=en&oi=scholarr
       journal: Integrative and Comparative Biology
       year: 2016
-
-    - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
-      url: https://link.springer.com/article/10.1007/s11262-014-1162-9
-      journal: Virus Genes
-      year: 2015
