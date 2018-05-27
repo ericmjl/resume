@@ -1,0 +1,37 @@
+# {{ resume['details']['given_name'] }} {{ resume['details']['middle_name'] }} {{ resume['details']['surname'] }}
+
+## Contact Information
+
+- Phone: {{ resume['contact']['phone'] }}
+- Email: {{ resume['contact']['email'] }}
+- Website: {{ resume['contact']['website'] }}
+- Location: {{ resume['contact']['location'] }}
+- GitHub: [{{ resume["contact"]['github'] }}](https://github.com/{{ resume['contact']['github'] }})
+
+## Skills
+
+{% for skill in resume['skills'] %}
+- {{ skill['type'] }}: {{ skill['text'] }}
+{% endfor %}
+
+
+## Experience
+
+{% for experience in resume['experience'] %}
+**{{ experience['company'] }}, {{ experience['title'] }}, {{ experience['location'] }}** ({{ experience['timeperiod'] }})
+{{ experience['description'] }}
+{% endfor %}
+
+
+## Education
+
+{% for education in resume['education'] %}
+**{{ education['degree'] }}**, {{ education['department'] }}, {{ education['school'] }}, {{ education['location'] }} ({{ education['timeperiod'] }})
+{% endfor %}
+
+
+## Publications
+
+{% for publication in resume['publications']|sort(attribute='year')|reverse %}
+- {{ publication['title'] }} *{{ publication['journal'] }}* ({{ publication['year'] }}). [link]({{ publication['url'] }})
+{% endfor %}
