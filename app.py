@@ -15,16 +15,16 @@ def view_resume():
     for exp in resume['experience']:
         exp['description'] = Markup(md(exp['description']))
 
-    with open('templates/resume.html.j2', 'r+') as f:
-        template = f.read()
+    # with open('templates/resume.html.j2', 'r+') as f:
+    #     template = f.read()
 
-    t = Template(source=template)
+    # t = Template(source=template)
 
-    with open('index.html', 'w+') as f:
-        f.write(t.render(resume=resume))
+    # with open('index.html', 'w+') as f:
+    #     f.write(t.render(resume=resume))
 
     return render_template('resume.html.j2', resume=resume)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5656)
