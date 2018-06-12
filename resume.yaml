@@ -1,132 +1,104 @@
 details:
-    given_name: Eric
-    middle_name: J.
-    surname: Ma
+    given_name: Jixin
+    middle_name: (Jason)
+    surname: Li
 
 contact:
-    phone: 857-209-1375
-    email: http://shortwhale.com/ericmjl
-    website: https://ericmjl.github.io/
-    location: North Quincy, MA
-    github: ericmjl
-    linkedin: https://www.linkedin.com/in/ericmjl
+    phone: 929-213-2402
+    email: jl4771@columbia.edu
+    website:
+    location: Cambridge, MA  # city and state only
+    github: ericmjl  # just the username is sufficient
+    linkedin: jixin-li-432b7a123  # just the vanity handle
 
 experience:
     # Use this entry as an example that can be copied/pasted.
-    - company: Novartis Institutes for Biomedical Research (NIBR)
-      title: Investigator I
-      location: Cambridge MA
-      timeperiod: September 2017-Present
+    - company: Learnable, Inc.
+      title: Junior Data Scientist
+      location: Boston MA
+      timeperiod: October 2017-Present
       # Every "description" field should be written as Markdown.
       description: |
-        - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
-        - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
-        - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
-        - Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting.
+        - Consulted as a data scientist for 4 company clients.
+        - Comanaged machine learning based flight and transportation delay insurance products from planning to deployment
+        - Implemented neural network (Lua) and xgboost (Python) models for flight and transportation delay predictions
+        - Built a "tree of SVM models" to label knowledge tags on middle school math problem sets.
+        - Planned a personalized coupon lottery game based on customers’ demographics for a beverage can manufacturer
+        - Rearranged Github projects as the standard machine learning pipeline for data science projects of the company
 
-    - company: Insight Data Science
-      title: Health Data Science Fellow
-      location: Boston MA
-      timeperiod: June 2017-August 2017
+    - company: Shanghai AsiaEAP Consulting Co.
+      title: Survey Data Analyst
+      location: Shanghai, China
+      timeperiod: June 2015-March 2016
       description: |
-       - Built [Flu Forecaster](https://fluforecaster.herokuapp.com), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
-        - Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.
-        - Developed interactive blog post using Flask and Bootstrap, and deployed to Heroku and GitHub.
-        - Led peer workshops on [web development](https://github.com/ericmjl/minimal-flask-example), deep learning and [code style](https://github.com/ericmjl/pycodestyle-tutorial).
-
-    - company: Massachusetts Institute of Technology
-      title: ScD Candidate
-      location: Cambridge MA
-      timeperiod: August 2011-May 2017
-      description: |
-        - Developed a scalable, network-based phylogenetic heuristic algorithm for detecting reassortant influenza viruses using 18,632 fully sequenced virus genomes that improved our capacity to detect reassortment events by two orders of magnitude.
-        - The algorithm was used in a lead-author study (published in [PNAS](http://www.pnas.org/content/113/19/5335.full)) providing systematic evidence that genome shuffling is important for host switching, and a co-authored study (published in [Ecology Letters](http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract)) that showed that reassortment is a strategy for viral gene persistence in wild animal reservoirs.
-        - Contributed [reproducible data analysis](https://github.com/runstadler-lab/Seal-H3N8-Image-Analysis) for colleagues through fluorescent image quantification and genomic analysis in studies that refuted binding properties of novel influenza viruses.
-        - Performed [Bayesian statistical modelling](https://github.com/ericmjl/mia-stats/blob/master/sterilization/sterilization.ipynb) for colleagues testing the efficacy of phone sterilization tools.
-        - Delivered tutorials and talks on Network Analysis and Bayesian statistical methods at annual Python conferences, including PyCon, SciPy, and PyData.
-
-    - company: The University of British Columbia
-      title: Undergraduate Researcher
-      location: Vancouver BC
-      timeperiod: June 2006-May 2010
-      description: |
-        - Investigated the role of T cells in intestinal inflammation and fibrosis in a Salmonella typhimurium-induced model of gut inflammation, leading to First Prize Poster ([Rising Stars of Research 2008](https://www.evernote.com/l/AANJS_A9iKZAMLGYqJDduTxiiI2ZNf43zHM)) and Best Talk (Multidisciplinary Undergraduate Research Conference 2009) awards.
-        - Co-founded the [first UBC International Genetically Engineered Machines (iGEM) team](http://2009.igem.org/Team:British_Columbia), where we achieved a Gold status standing in our first year of competition.
-        - Served as a [Peer Academic Coach](https://science.ubc.ca/students/spac), guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.
+        - Conducted group interviews and sample surveys to client companies collecting nultidimensional mental health data
+        - Used SPSS and Excel for data analysis and visualization and wrote organizational mental health report
 
 education:
-    - degree: Sc.D.
-      school: Massachusetts Institute of Technology
-      department: Department of Biological Engineering
-      location: Cambridge MA
-      timeperiod: August 2011-May 2017
+    - degree: M.Sc.
+      school: Columbia University
+      field: Statistics
+      department: Graduate School of Arts and Sciences
+      gpa: 3.6 / 4.0
+      location: New York City, NY
+      timeperiod: September 2016-Dec 2017
 
-    - degree: B.Sc.
-      school: The University of British Columbia
-      department: Integrated Sciences
-      location: Cambridge MA
-      timeperiod: June 2006-May 2010
+    - degree: B.A.
+      school: University of Michigan
+      field: Psychology (Major) & Statistics (Minor)
+      department: College of Literature, Science, and the Arts
+      location: Ann Arbor MI
+      timeperiod: June 2012-May 2014
+
+    - degree: B.A.
+      school: Renmin University of China
+      field: Psychology
+      department: Department of Psychology (transferred to U. Mich. midway)
+      location: Beijing, China
+      timeperiod: June 2010-May 2012
+
+projects:
+    - title: Applied Double deep Q learning algorithm on four Atari games
+      institution: Columbia University
+      description: Realized deep Q learning on Atari games and improved the learning curve with Double Q algorithm.
+      month: December
+      year: 2017
+
+    - title: Utilized Matlab Analytics to target potential investors in capital rasing business
+      institution:
+      description: Designed pipeline and taught non tech-savvy bankers to utilize Matlab Analytics to find probable investors.
+      month: October
+      year: 2017
+
+    - title: Improved Counting Accuracy of Video Detector Product on Retail Store Walk-Ins
+      institution:
+      description: Implemented optimal Sklearn linear model with clustering to reduce test error of detector counting by 50%.
+      month: June
+      year: 2017
+
+    - title: Text Mining of Inauguration Speeches of Historical US Presidents
+      institution: Columbia University
+      description: Clustered topics and detected topic trends from 59 inauguration speech texts using LDA model
+      month: January
+      year: 2017
 
 skills:
-    - type: Languages and Tools
-      text: Python, HTML, CSS, bash scripting, git, Illustrator, Indesign, Photoshop
+    - type: Programming
+      text: Python, R, SPSS, SQL, Lua
 
-    - type: Packages
-      text: Pandas, PyMC3 (Bayesian statistics), Flask, scikit-learn, scikit-image, Keras, NetworkX, Mesa
+    - type: Other
+      text: AWS, Git, Linux, Pytorch, Tensorflow, Scikit-learn, Pandas, Matplotlib
 
-    - type: ML/Stats
-      text: Network science, variational autoencoders, random forests, Bayesian inference, graphical models, agent-based models
+    - type: Certification
+      text: CFA Level I
 
-    - type: Life Sciences
-      text: Microbiology, virology, biochemistry, molecular biology
+activities:
+    - title: Director of Finance
+      organization: Statistics Club
+      institution: Columbia University
+      timeperiod: January 2017-Present
 
-publications:
-    - title: Reticulate evolution is favored in influenza niche switching
-      url: http://www.pnas.org/content/113/19/5335.full
-      journal: PNAS
-      year: 2016
-
-    - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
-      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
-      journal: Emerging Infectious Diseases
-      year: 2017
-
-    - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
-      url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
-      journal: Ecology Letters
-      year: 2016
-
-    - title: Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential
-      url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
-      journal: PLOS Pathogens
-      year: 2016
-
-    - title: New England harbor seal H3N8 influenza virus retains avian-like receptor specificity
-      url: https://www.nature.com/articles/srep21428
-      journal: Scientific Reports
-      year: 2016
-
-    - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
-      url: https://link.springer.com/article/10.1007/s11262-014-1162-9
-      journal: Virus Genes
-      year: 2015
-
-    - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
-      url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
-      journal: Infection, Genetics and Evolution
-      year: 2016
-
-    - title: "Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds"
-      url: http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502
-      journal: Integrative and Comparative Biology
-      year: 2016
-
-    - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
-      url: https://www.ncbi.nlm.nih.gov/pubmed/29402348
-      journal: Journal of the American Association for Laboratory Animal Science
-      year: 2017
-
-    - title: A real-time surveillance dashboard for monitoring viral phenotype from sequence
-      url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
-      journal: International Journal of Infectious Diseases
-      year: 2016
+    - title: Autism Project Manager
+      organization: Youth Volunteer Organization
+      institution: Renmin University of China
+      timeperiod: September 2010-March 2012
