@@ -6,6 +6,12 @@ Building a resume using nothing but YAML files. A prototype. Inspired by https:/
 
 I have provided an `environment.yml` file, which specifies a conda environment that can be used.
 
+To get it running:
+
+```bash
+$ conda env create -f environment.yml
+```
+
 When done, run the app:
 
 ```bash
