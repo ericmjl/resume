@@ -14,15 +14,26 @@ contact:
 experience:
     # Use this entry as an example that can be copied/pasted.
     - company: Novartis Institutes for Biomedical Research (NIBR)
+      title: Investigator II
+      location: Cambridge MA
+      timeperiod: September 2018-Present
+      # Every "description" field should be written as Markdown.
+      description: |
+        - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
+        - Led an initiative to characterize the performance of message passing neural networks.
+        - Developed scaled automated data analysis pipelines for the analysis of neurophysiology assay data.
+        - Developed
+
+
+    - company: Novartis Institutes for Biomedical Research (NIBR)
       title: Investigator I
       location: Cambridge MA
       timeperiod: September 2017-Present
-      # Every "description" field should be written as Markdown.
       description: |
         - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
         - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
         - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
-        - Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting.
+        - Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting, with one paper currently in writing.
 
     - company: Insight Data Science
       title: Health Data Science Fellow
@@ -130,3 +141,13 @@ publications:
       url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
       journal: International Journal of Infectious Diseases
       year: 2016
+
+    - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
+      url: https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004
+      journal: Journal of the American Association for Laboratory Animal Science
+      year: 2018
+
+    - title: Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques
+      url: https://aem.asm.org/content/early/2018/07/09/AEM.01336-18
+      journal: Applied and Environmental Microbiology
+      year: 2018
