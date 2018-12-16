@@ -8,3 +8,7 @@ dependencies:
 - jupyter
 - ipykernel
 - flask
+- mypy
+- pycodestyle
+- flake8
+- black

@@ -24,11 +24,22 @@
 ## Experience
 
 
+**Novartis Institutes for Biomedical Research (NIBR), Investigator II, Cambridge MA** (September 2018-Present)
+- Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
+- Led an initiative to characterize the performance of message passing neural networks.
+- Developed a hierarchical Bayesian 4-parameter dose response model to aid project team in compound selection.
+- Currently developing a deep Bayesian optimization pipeline to accelerate protein engineering cycles.
+- Co-hosted a machine learning session with [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/) at the internal Data in Drug Discovery Day (D4).
+- Co-organized an internal course with [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/) and [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/) on machine learning for NIBR colleagues.
+- Led a deep learning workshop at our NIBR Shanghai office.
+
+
 **Novartis Institutes for Biomedical Research (NIBR), Investigator I, Cambridge MA** (September 2017-Present)
 - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
 - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
 - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
-- Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting.
+- Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting, with one paper currently in writing.
+- Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA).
 
 
 **Insight Data Science, Health Data Science Fellow, Boston MA** (June 2017-August 2017)
@@ -65,6 +76,10 @@
 
 ## Publications
 
+
+- Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques *Applied and Environmental Microbiology* (2018). [link](https://aem.asm.org/content/early/2018/07/09/AEM.01336-18)
+
+- Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones *Journal of the American Association for Laboratory Animal Science* (2018). [link](https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004)
 
 - Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones *Journal of the American Association for Laboratory Animal Science* (2017). [link](https://www.ncbi.nlm.nih.gov/pubmed/29402348)
 

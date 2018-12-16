@@ -21,8 +21,11 @@ experience:
       description: |
         - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
         - Led an initiative to characterize the performance of message passing neural networks.
-        - Developed scaled automated data analysis pipelines for the analysis of neurophysiology assay data.
-        - Developed
+        - Developed a hierarchical Bayesian 4-parameter dose response model to aid project team in compound selection.
+        - Co-hosted a machine learning session with [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/) at the internal Data in Drug Discovery Day (D4).
+        - Co-organized an internal course with [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/) and [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/) on machine learning for NIBR colleagues in the Pre-Clinical Safety (PCS) department.
+        - Led a deep learning workshop at our NIBR Shanghai office.
+        - Currently developing a deep Bayesian optimization pipeline to accelerate protein engineering cycles.
 
 
     - company: Novartis Institutes for Biomedical Research (NIBR)
@@ -34,6 +37,7 @@ experience:
         - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
         - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
         - Authored custom deep learning package to train graph convolutional neural networks to predict structural determinants of RNA cutting, with one paper currently in writing.
+        - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA).
 
     - company: Insight Data Science
       title: Health Data Science Fellow
