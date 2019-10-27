@@ -21,7 +21,9 @@ experience:
       description: |
         - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
         - Co-organized and developed teaching material for machine learning & deep learning workshops and seminars internally at NIBR with colleagues [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/), [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/), [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/), and [Sean Xiao]().
-        - Developed a massively parallelized engine for training, evaluating, and serving machine learning models on internal assay data, with an emphasis on serving prediction uncertainties.
+        - Developed a massively parallelized engine for training, evaluating, and serving machine learning models on internal assay data, with an emphasis on serving prediction uncertainties with NIBR colleagues [Nikolaus Stiefl](https://www.linkedin.com/in/nikolaus-stiefl-39583b25/) and [Gregori Gerebtzoff](https://www.linkedin.com/in/gregorigerebtzoff/).
+        - Developed Bayeisan graph deep learning models for chemical and protein property prediction with [William J. Godinez](https://www.linkedin.com/in/william-j-godinez/)
+        - Co-mentored [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/) with [Richard Lewis](https://www.linkedin.com/in/richard-lewis-8916891/) in support of the development of machine learning and deep learning workflows for protein engineering.
 
     - company: Novartis Institutes for Biomedical Research (NIBR)
       title: Investigator I
@@ -32,7 +34,7 @@ experience:
         - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
         - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
         - Assisted in the analysis of high throughput DROSHA cleavage data, with one paper currently in writing.
-        - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA).
+        - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery with [Clayton Springer](https://www.linkedin.com/in/clayton-springer-5a48072/)) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA with [Brant Peterson](https://www.linkedin.com/in/brant-peterson-b390a51/)).
 
     - company: Insight Data Science
       title: Health Data Science Fellow
