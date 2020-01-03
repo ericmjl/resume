@@ -36,7 +36,7 @@
             </a>
             <a href="{{ resume['contact']['website'] }}" type="button" class="btn btn-light">
               <i class="fa fa-globe" aria-hidden="true"></i>
-              Personal Website
+              Website
             </a>
             <button type="button" class="btn btn-light">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -119,7 +119,8 @@
           <ul class="list-group">
             {% for pub in resume['publications']|sort(attribute='year')|reverse %}
             <li class="list-group-item">
-              {{ pub['title'] }}. <i>{{ pub['journal'] }}</i> ({{ pub['year'] }}). <a href="{{ pub['url'] }}">[link]</a>
+              <p>{{ pub['title'] }}. <a href="{{ pub['url'] }}">[link]</a></p>
+              <small><i>{{ pub['journal'] }}</i>, ({{ pub['year'] }})</small>
             </li>
             {% endfor %}
           </ul>
