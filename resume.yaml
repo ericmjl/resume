@@ -176,3 +176,13 @@ publications:
       url: https://aem.asm.org/content/early/2018/07/09/AEM.01336-18
       journal: Applied and Environmental Microbiology
       year: 2018
+
+    - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
+      url: https://www.biorxiv.org/content/10.1101/597518v2
+      journal: BioRXiv
+      year: 2019
+
+    - title: "pyjanitor: A Cleaner API for Cleaning Data"
+      url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
+      journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
+      year: 2019

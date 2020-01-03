@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap v4 Imports -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -103,29 +104,14 @@
         </div>
         {% endfor %}
       </div>
-      <!-- <div class="container">
-        {% for edu in resume['education'] %}
-        <div class="row" id="{{ edu['degree'] }}-row">
-          <div class="col-9">
-            <p align="left"><b>{{ edu['degree'] }}</b>, {{ edu['department'] }}, {{ edu['school'] }},
-              {{ edu['location'] }}</p>
-          </div>
-          <div class="col-3">
-            <p align="right">
-              <b>{{ edu['timeperiod'] }}</b>
-            </p>
-          </div>
-        </div>
-        {% endfor %}
-      </div> -->
 
       <br>
       <div class="row" id="publications-row">
         <div class="col-12" id="publications-title-row">
           <h2><i class="fa fa-bookmark"></i> Publications</h2>
-          <ul>
+          <ul class="list-group">
             {% for pub in resume['publications']|sort(attribute='year')|reverse %}
-            <li>
+            <li class="list-group-item">
               {{ pub['title'] }}. <i>{{ pub['journal'] }}</i> ({{ pub['year'] }}). <a href="{{ pub['url'] }}">[link]</a>
             </li>
             {% endfor %}
