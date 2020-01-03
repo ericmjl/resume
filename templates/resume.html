@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap v4 Imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Eric J. Ma's Resume</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row" id="name-contact-row">
+        <div class="col-12" id="name-contact-col">
+          <h1 align="center">
+            {{ resume['details']['given_name'] }}
+            {% if resume['details']['middle_name'] %}
+            {{ resume['details']['middle_name'] }}
+            {% endif %}
+            {{ resume['details']['surname'] }}
+          </h1>
+          <p align="center">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="{{ resume['contact']['email']}}">Email</a>
+            |
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:{{ resume['contact']['phone'] }}">{{ resume['contact']['phone'] }}</a>
+            |
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a href="http://www.linkedin.com/in/yourusername">LinkedIn</a>
+            |
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <a href="https://github.com/{{ resume['contact']['github'] }}">GitHub</a>
+            |
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <a href="{{ resume['contact']['website'] }}">Personal Website</a>
+            |
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            {{ resume['contact']['location'] }}
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="skills-title-row">
+        <div class="col-12" id="skills-title-col">
+          <h2>
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            Skills
+          </h2>
+        </div>
+      </div>
+      <div class="card-group">
+        {% for skill in resume['skills'] %}
+        <div class="card w-25">
+          <div class="card-body">
+            <h5 class="card-title">{{ skill["type"] }}</h5>
+            <p class="card-text"> {{ skill["items"]|join(", ") }}</p>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+        {% endfor %}
+      </div>
+      <hr>
+      <div class="row" id="experience-row">
+        <div class="col-12">
+          <h2>
+            <i class="fa fa-code" aria-hidden="true"></i>
+            Experience
+          </h2>
+        </div>
+        <div class="container" id="experience-details">
+          {% for experience in resume['experience'] %}
+          <div class="card" id="{{ experience['company']}}-card">
+            <div class="card-body">
+              <h5 class="card-title">{{ experience['title'] }}, {{ experience['company'] }}</h5>
+              <small class="text-muted">{{ experience['timeperiod'] }}, {{ experience['location'] }}</small>
+              <p class="card-text">{{ experience['description'] }}</p>
+            </div>
+          </div>
+          <br>
+          {% endfor %}
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="education-row">
+        <div class="col-12" id="education-title-row">
+          <h2>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            Education
+          </h2>
+        </div>
+        <div class="container">
+          {% for edu in resume['education'] %}
+          <div class="row" id="{{ edu['degree'] }}-row">
+            <div class="col-9">
+              <p align="left"><b>{{ edu['degree'] }}</b>, {{ edu['department'] }}, {{ edu['school'] }},
+                {{ edu['location'] }}</p>
+            </div>
+            <div class="col-3">
+              <p align="right">
+                <b>{{ edu['timeperiod'] }}</b>
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="publications-row">
+        <div class="col-12" id="publications-title-row">
+          <h2><i class="fa fa-bookmark"></i> Publications</h2>
+          <ul>
+            {% for pub in resume['publications']|sort(attribute='year')|reverse %}
+            <li>
+              {{ pub['title'] }}. <i>{{ pub['journal'] }}</i> ({{ pub['year'] }}). <a href="{{ pub['url'] }}">[link]</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <!-- Boostrap JS imports -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <!-- FontAwesome embed -->
+  <script src="https://use.fontawesome.com/cb9dbe8e41.js"></script>
+
+</html>

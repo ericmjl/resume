@@ -28,7 +28,7 @@ experience:
     - company: Novartis Institutes for Biomedical Research (NIBR)
       title: Investigator I
       location: Cambridge MA
-      timeperiod: September 2017-Present
+      timeperiod: September 2017-August 2018
       description: |
         - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
         - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
@@ -81,16 +81,42 @@ education:
 
 skills:
     - type: Languages and Tools
-      text: Python, HTML, CSS, bash scripting, git, Illustrator, Indesign, Photoshop
+      items:
+        - Python
+        - HTML
+        - CSS
+        - bash scripting
+        - git
+        - Illustrator
+        - Indesign
+        - Photoshop
 
     - type: Packages
-      text: Pandas, PyMC3 (Bayesian statistics), Flask, scikit-learn, scikit-image, Keras, NetworkX, Mesa
+      items:
+        - Pandas
+        - PyMC3 (Bayesian statistics)
+        - Flask
+        - scikit-learn
+        - scikit-image
+        - Keras
+        - NetworkX
+        - Mesa
 
     - type: ML/Stats
-      text: Network science, variational autoencoders, random forests, Bayesian inference, graphical models, agent-based models
+      items:
+        - Network science
+        - variational autoencoders
+        - random forests
+        - Bayesian inference
+        - graphical models
+        - agent-based models
 
     - type: Life Sciences
-      text: Microbiology, virology, biochemistry, molecular biology
+      items:
+        - Microbiology
+        - virology
+        - biochemistry
+        - molecular biology
 
 publications:
     - title: Reticulate evolution is favored in influenza niche switching

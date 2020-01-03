@@ -18,7 +18,7 @@ def write_html(resume):
     """
     Write the HTML version of the resume to disk.
     """
-    t = read_template('templates/resume.html.j2')
+    t = read_template('templates/resume.html')
 
     with open('index.html', 'w+') as f:
         f.write(t.render(resume=resume))
@@ -50,7 +50,7 @@ def read_resume(markup=True):
 def index():
     resume = read_resume(markup=True)
     write_html(resume)
-    return render_template('resume.html.j2', resume=resume)
+    return render_template('resume.html', resume=resume)
 
 
 @app.route('/markdown')

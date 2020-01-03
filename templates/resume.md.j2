@@ -11,7 +11,7 @@
 ## Skills
 
 {% for skill in resume['skills'] %}
-- {{ skill['type'] }}: {{ skill['text'] }}
+- {{ skill['type'] }}: {{ skill['text']|join(", ") }}
 {% endfor %}
 
 
