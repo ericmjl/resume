@@ -13,33 +13,36 @@
   <body>
     <div class="container">
       <div class="row" id="name-contact-row">
-        <div class="col-12" id="name-contact-col">
-          <h1 align="center">
+        <div class="col-12 text-center" id="name-contact-col">
+          <h1>
             {{ resume['details']['given_name'] }}
             {% if resume['details']['middle_name'] %}
             {{ resume['details']['middle_name'] }}
             {% endif %}
             {{ resume['details']['surname'] }}
           </h1>
-          <p align="center">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="{{ resume['contact']['email']}}">Email</a>
-            |
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <a href="tel:{{ resume['contact']['phone'] }}">{{ resume['contact']['phone'] }}</a>
-            |
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            <a href="http://www.linkedin.com/in/yourusername">LinkedIn</a>
-            |
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-            <a href="https://github.com/{{ resume['contact']['github'] }}">GitHub</a>
-            |
-            <i class="fa fa-globe" aria-hidden="true"></i>
-            <a href="{{ resume['contact']['website'] }}">Personal Website</a>
-            |
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            {{ resume['contact']['location'] }}
-          </p>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="{{ resume['contact']['email']}}" type="button" class="btn btn-light">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              Email
+            </a>
+            <a href="{{ resume['contact']['linkedin'] }}" type="button" class="btn btn-light">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+            <a href="https://github.com/{{ resume['contact']['github'] }}" type="button" class="btn btn-light">
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+              GitHub
+            </a>
+            <a href="{{ resume['contact']['website'] }}" type="button" class="btn btn-light">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              Personal Website
+            </a>
+            <button type="button" class="btn btn-light">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              {{ resume['contact']['location'] }}
+            </button>
+          </div>
         </div>
       </div>
       <br>
@@ -54,11 +57,13 @@
       <div class="card-group">
         {% for skill in resume['skills'] %}
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">{{ skill["type"] }}</h5>
+          <div class="card-header">
+            <h5>{{ skill["type"] }}</h5>
             <small class="text-muted">
               <p>{{ skill["description"] }}</p>
             </small>
+          </div>
+          <div class="card-body">
             <p class="card-text"> {{ skill["items"]|join(", ") }}</p>
           </div>
         </div>
@@ -75,9 +80,11 @@
         <div class="container" id="experience-details">
           {% for experience in resume['experience'] %}
           <div class="card" id="{{ experience['company']}}-card">
-            <div class="card-body">
+            <div class="card-header">
               <h5 class="card-title">{{ experience['title'] }}, {{ experience['company'] }}</h5>
-              <small class="text-muted">{{ experience['timeperiod'] }}, {{ experience['location'] }}</small>
+              <h6 class="card-subtitle text-muted">{{ experience['timeperiod'] }}, {{ experience['location'] }}</h6>
+            </div>
+            <div class="card-body">
               <p class="card-text">{{ experience['description'] }}</p>
             </div>
           </div>
