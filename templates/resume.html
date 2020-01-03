@@ -119,8 +119,8 @@
           <ul class="list-group">
             {% for pub in resume['publications']|sort(attribute='year')|reverse %}
             <li class="list-group-item">
-              <p>{{ pub['title'] }}. <a href="{{ pub['url'] }}">[link]</a></p>
-              <small><i>{{ pub['journal'] }}</i>, ({{ pub['year'] }})</small>
+              <p>{{ pub['title'] }} ({{ pub['year'] }})</p>
+              <small><a href="{{ pub['url'] }}"><i>{{ pub['journal'] }}</i></a></small>
             </li>
             {% endfor %}
           </ul>
