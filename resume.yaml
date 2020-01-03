@@ -81,6 +81,7 @@ education:
 
 skills:
     - type: Languages and Tools
+      description: Programming languages and tools that I use in my day-to-day.
       items:
         - Python
         - HTML
@@ -92,6 +93,7 @@ skills:
         - Photoshop
 
     - type: Packages
+      description: Specific Python packages that I have proficiency with.
       items:
         - Pandas
         - PyMC3 (Bayesian statistics)
@@ -103,15 +105,16 @@ skills:
         - Mesa
 
     - type: ML/Stats
+      description: Concepts and ideas that I have mastery over.
       items:
-        - Network science
-        - variational autoencoders
-        - random forests
+        - network science
+        - machine/deep learning
         - Bayesian inference
         - graphical models
         - agent-based models
 
     - type: Life Sciences
+      description: Domain expertise gained during my education.
       items:
         - Microbiology
         - virology
