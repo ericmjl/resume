@@ -67,17 +67,17 @@ experience:
         - Served as a [Peer Academic Coach](https://science.ubc.ca/students/spac), guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.
 
 education:
-    - degree: B.Sc.
-      school: The University of British Columbia
-      department: Integrated Sciences
-      location: Cambridge MA
-      timeperiod: June 2006-May 2010
-
     - degree: Sc.D.
       school: Massachusetts Institute of Technology
       department: Department of Biological Engineering
       location: Cambridge MA
       timeperiod: August 2011-May 2017
+
+    - degree: B.Sc.
+      school: The University of British Columbia
+      department: Integrated Sciences
+      location: Cambridge MA
+      timeperiod: June 2006-May 2010
 
 skills:
     - type: Languages and Tools
