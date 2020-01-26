@@ -7,10 +7,12 @@
     <!-- Bootstrap v4 Imports -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href={{ url_for('static', filename='custom.css') }}>
     <title>Eric J. Ma's Resume</title>
   </head>
 
-  <body>
+  <body class="bg-nord">
     <div class="container">
       <div class="row" id="name-contact-row">
         <div class="col-12 text-center" id="name-contact-col">
@@ -23,23 +25,23 @@
             {{ resume['details']['surname'] }}
           </h1>
           <div class="btn-group" role="group" aria-label="Basic example">
-            <a href="{{ resume['contact']['email']}}" type="button" class="btn btn-light">
+            <a href="{{ resume['contact']['email']}}" type="button" class="btn btn-nord">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               Email
             </a>
-            <a href="{{ resume['contact']['linkedin'] }}" type="button" class="btn btn-light">
+            <a href="{{ resume['contact']['linkedin'] }}" type="button" class="btn btn-nord">
               <i class="fa fa-linkedin-square" aria-hidden="true"></i>
               LinkedIn
             </a>
-            <a href="https://github.com/{{ resume['contact']['github'] }}" type="button" class="btn btn-light">
+            <a href="https://github.com/{{ resume['contact']['github'] }}" type="button" class="btn btn-nord">
               <i class="fa fa-github-square" aria-hidden="true"></i>
               GitHub
             </a>
-            <a href="{{ resume['contact']['website'] }}" type="button" class="btn btn-light">
+            <a href="{{ resume['contact']['website'] }}" type="button" class="btn btn-nord">
               <i class="fa fa-globe" aria-hidden="true"></i>
               Website
             </a>
-            <a type="button" class="btn btn-light">
+            <a type="button" class="btn btn-nord">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               {{ resume['contact']['location'] }}
             </a>
@@ -57,10 +59,10 @@
       </div>
       <div class="card-group">
         {% for skill in resume['skills'] %}
-        <div class="card">
-          <div class="card-header">
+        <div class="card card-nord">
+          <div class="card-header card-header-nord">
             <h5>{{ skill["type"] }}</h5>
-            <small class="text-muted">
+            <small class="text-muted-nord">
               <p>{{ skill["description"] }}</p>
             </small>
           </div>
@@ -80,10 +82,10 @@
         </div>
         <div class="container" id="experience-details">
           {% for experience in resume['experience'] %}
-          <div class="card" id="{{ experience['company']}}-card">
-            <div class="card-header">
+          <div class="card card-nord" id="{{ experience['company']}}-card">
+            <div class="card-header card-header-nord">
               <h5 class="card-title">{{ experience['title'] }}, {{ experience['company'] }}</h5>
-              <h6 class="card-subtitle text-muted">{{ experience['timeperiod'] }}, {{ experience['location'] }}</h6>
+              <h6 class="card-subtitle text-muted-nord">{{ experience['timeperiod'] }}, {{ experience['location'] }}</h6>
             </div>
             <div class="card-body">
               <p class="card-text">{{ experience['description'] }}</p>
@@ -104,7 +106,7 @@
       </div>
       <div class="card-group">
         {% for edu in resume["education"] %}
-        <div class="card">
+        <div class="card card-nord">
           <div class="card-body">
             <h5 class="card-title">{{ edu["degree"] }}, {{ edu["school"] }}</h5>
             <small>{{ edu["department"] }}, {{ edu["timeperiod"] }}, {{ edu["location"] }}</small>
@@ -135,7 +137,8 @@
             <a href="https://palletsprojects.com/p/flask/">Flask</a>,
             <a href="https://palletsprojects.com/p/jinja/">Jinja2</a>,
             and <a href="https://getbootstrap.com/">Bootstrap 4</a>.
-            Source at <a href="https://github.com/ericmjl/resume">GitHub</a>
+            Source at <a href="https://github.com/ericmjl/resume">GitHub.</a>
+            Color theme: <a href="https://nordtheme.com">Nord</a>.
           </small>
           <hr>
         </div>
