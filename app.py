@@ -1,9 +1,7 @@
+"""Simple flask app to preview resume."""
 import yaml
-from flask import Flask, Markup, render_template, redirect
+from flask import Flask, Markup, redirect, render_template
 from jinja2 import Template
-import os
-
-print(os.getcwd())
 from markdown import markdown as md
 
 app = Flask(__name__)
@@ -16,13 +14,13 @@ def read_template(template):
     return t
 
 
-def write_html(resume):
+def write_html(resume, path="index.html"):
     """
     Write the HTML version of the resume to disk.
     """
     t = read_template("templates/resume.html")
 
-    with open("index.html", "w+") as f:
+    with open(path, "w+") as f:
         f.write(t.render(resume=resume))
 
 
@@ -48,13 +46,15 @@ def read_resume(markup=True):
     return resume
 
 
-@app.route("/")
-def index():
+def make_html():
     resume = read_resume(markup=True)
     html = render_template("resume.html", resume=resume)
-    with open("index.html", "w+") as f:
-        f.write(html)
     return html
+
+
+@app.route("/")
+def index():
+    return make_html()
 
 
 @app.route("/markdown")
