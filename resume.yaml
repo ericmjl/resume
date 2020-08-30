@@ -33,6 +33,7 @@ experience:
         - Co-organized and developed teaching material for machine learning & deep learning workshops and seminars internally at NIBR with colleagues [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/), [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/), [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/), and Sean Xiao.
         - Developed a massively parallelized engine for training, evaluating, and serving machine learning models on internal assay data, with an emphasis on serving prediction uncertainties with NIBR colleagues [Nikolaus Stiefl](https://www.linkedin.com/in/nikolaus-stiefl-39583b25/) and [Gregori Gerebtzoff](https://www.linkedin.com/in/gregorigerebtzoff/).
         - Developed machine learning workflows to accelerate protein engineering as part of the internal Genesis Labs innovation initiative, with [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/) and [Richard Lewis](https://www.linkedin.com/in/richard-lewis-8916891/).
+        - Accelerated recurrent neural network UniRep using JAX. [Software](https://github.com/ElArkk/jax-unirep) and [preprint](https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1) available.
 
     - company: Novartis Institutes for Biomedical Research (NIBR)
       title: Investigator I, Data Science & Statistical Learning
