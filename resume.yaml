@@ -196,3 +196,8 @@ publications:
       url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
       journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
       year: 2019
+
+    - title: "Functional Atlas of Primary miRNA Maturation by the Microprocessor"
+      url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
+      journal: Molecular Cell
+      year: 2020
