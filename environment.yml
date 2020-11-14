@@ -1,16 +1,14 @@
 name: resume
 channels:
-- defaults
-- conda-forge
-- ericmjl
+  - conda-forge
 dependencies:
-- python>=3.8
-- jupyter
-- ipykernel
-- flask
-- mypy
-- pycodestyle
-- flake8
-- black
-- pyyaml
-- markdown
+  - python>=3.8
+  - jupyter
+  - ipykernel
+  - flask
+  - mypy
+  - pycodestyle
+  - flake8
+  - black
+  - pyyaml
+  - markdown
