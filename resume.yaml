@@ -1,203 +1,226 @@
 details:
-    given_name: Eric
-    middle_name: J.
-    surname: Ma
+  given_name: Eric
+  middle_name: J.
+  surname: Ma
 
 contact:
-    phone: 857-209-1375
-    email: http://shortwhale.com/ericmjl
-    website: https://ericmjl.github.io/
-    location: North Quincy, MA
-    github: ericmjl
-    linkedin: https://www.linkedin.com/in/ericmjl
+  phone: 857-209-1375
+  email: http://shortwhale.com/ericmjl
+  website: https://ericmjl.github.io/
+  location: North Quincy, MA
+  github: ericmjl
+  linkedin: https://www.linkedin.com/in/ericmjl
 
 experience:
-    # Use this entry as an example that can be copied/pasted.
-    - company: Novartis Institutes for Biomedical Research (NIBR)
-      title: Senior Expert II/Investigator III, Data Science and Statistical Learning
-      location: Cambridge MA
-      timeperiod: August 2020-Present
-      # Every "description" field should be written as Markdown.
-      description: |
-        - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
-        - Spearheaded internal education initiatives to train colleagues on machine learning and statistical methods.
-        - Built autoregressive hidden Markov models to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
-        - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
+  # Use this entry as an example that can be copied/pasted.
+  - company: Novartis Institutes for Biomedical Research (NIBR)
+    title: Senior Expert II/Investigator III, Data Science and Statistical Learning
+    location: Cambridge MA
+    timeperiod: August 2020-Present
+    # Every "description" field should be written as Markdown.
+    description: |
+      - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
+      - Spearheaded internal education initiatives to train colleagues on machine learning and statistical methods.
+      - Built autoregressive hidden Markov models to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
+      - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
 
-    - company: Novartis Institutes for Biomedical Research (NIBR)
-      title: Investigator II/Senior Expert I, Data Science and Statistical Learning
-      location: Cambridge MA
-      timeperiod: September 2018-July 2020
-      description: |
-        - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
-        - Co-organized and developed teaching material for machine learning & deep learning workshops and seminars internally at NIBR with colleagues [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/), [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/), [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/), and Sean Xiao.
-        - Developed a massively parallelized engine for training, evaluating, and serving machine learning models on internal assay data, with an emphasis on serving prediction uncertainties with NIBR colleagues [Nikolaus Stiefl](https://www.linkedin.com/in/nikolaus-stiefl-39583b25/) and [Gregori Gerebtzoff](https://www.linkedin.com/in/gregorigerebtzoff/).
-        - Developed machine learning workflows to accelerate protein engineering as part of the internal Genesis Labs innovation initiative, with [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/) and [Richard Lewis](https://www.linkedin.com/in/richard-lewis-8916891/).
-        - Accelerated recurrent neural network UniRep using JAX. [Software](https://github.com/ElArkk/jax-unirep) and [preprint](https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1) available.
+  - company: Novartis Institutes for Biomedical Research (NIBR)
+    title: Investigator II/Senior Expert I, Data Science and Statistical Learning
+    location: Cambridge MA
+    timeperiod: September 2018-July 2020
+    description: |
+      - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
+      - Co-organized and developed teaching material for machine learning & deep learning workshops and seminars internally at NIBR with colleagues [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/), [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/), [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/), and Sean Xiao.
+      - Developed a massively parallelized engine for training, evaluating, and serving machine learning models on internal assay data, with an emphasis on serving prediction uncertainties with NIBR colleagues [Nikolaus Stiefl](https://www.linkedin.com/in/nikolaus-stiefl-39583b25/) and [Gregori Gerebtzoff](https://www.linkedin.com/in/gregorigerebtzoff/).
+      - Developed machine learning workflows to accelerate protein engineering as part of the internal Genesis Labs innovation initiative, with [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/) and [Richard Lewis](https://www.linkedin.com/in/richard-lewis-8916891/).
+      - Accelerated recurrent neural network UniRep using JAX. [Software](https://github.com/ElArkk/jax-unirep) and [preprint](https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1) available.
 
-    - company: Novartis Institutes for Biomedical Research (NIBR)
-      title: Investigator I, Data Science & Statistical Learning
-      location: Cambridge MA
-      timeperiod: September 2017-August 2018
-      description: |
-        - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
-        - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
-        - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
-        - Assisted in the analysis of high throughput DROSHA cleavage data, with one paper currently in writing.
-        - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery with [Clayton Springer](https://www.linkedin.com/in/clayton-springer-5a48072/)) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA with [Brant Peterson](https://www.linkedin.com/in/brant-peterson-b390a51/)).
+  - company: Novartis Institutes for Biomedical Research (NIBR)
+    title: Investigator I, Data Science & Statistical Learning
+    location: Cambridge MA
+    timeperiod: September 2017-August 2018
+    description: |
+      - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
+      - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
+      - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
+      - Assisted in the analysis of high throughput DROSHA cleavage data, with one paper currently in writing.
+      - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery with [Clayton Springer](https://www.linkedin.com/in/clayton-springer-5a48072/)) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA with [Brant Peterson](https://www.linkedin.com/in/brant-peterson-b390a51/)).
 
-    - company: Insight Data Science
-      title: Health Data Science Fellow
-      location: Boston MA
-      timeperiod: June 2017-August 2017
-      description: |
-        - Built [Flu Forecaster](https://fluforecaster.herokuapp.com), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
-        - Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.
-        - Developed interactive blog post using Flask and Bootstrap, and deployed to Heroku and GitHub.
-        - Led peer workshops on [web development](https://github.com/ericmjl/minimal-flask-example), deep learning and [code style](https://github.com/ericmjl/pycodestyle-tutorial).
+  - company: Insight Data Science
+    title: Health Data Science Fellow
+    location: Boston MA
+    timeperiod: June 2017-August 2017
+    description: |
+      - Built [Flu Forecaster](https://fluforecaster.herokuapp.com), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
+      - Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.
+      - Developed interactive blog post using Flask and Bootstrap, and deployed to Heroku and GitHub.
+      - Led peer workshops on [web development](https://github.com/ericmjl/minimal-flask-example), deep learning and [code style](https://github.com/ericmjl/pycodestyle-tutorial).
 
-    - company: Massachusetts Institute of Technology
-      title: ScD Candidate
-      location: Cambridge MA
-      timeperiod: August 2011-May 2017
-      description: |
-        - Developed a scalable, network-based phylogenetic heuristic algorithm for detecting reassortant influenza viruses using 18,632 fully sequenced virus genomes that improved our capacity to detect reassortment events by two orders of magnitude.
-        - The algorithm was used in a lead-author study (published in [PNAS](http://www.pnas.org/content/113/19/5335.full)) providing systematic evidence that genome shuffling is important for host switching, and a co-authored study (published in [Ecology Letters](http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract)) that showed that reassortment is a strategy for viral gene persistence in wild animal reservoirs.
-        - Contributed [reproducible data analysis](https://github.com/runstadler-lab/Seal-H3N8-Image-Analysis) for colleagues through fluorescent image quantification and genomic analysis in studies that refuted binding properties of novel influenza viruses.
-        - Performed [Bayesian statistical modelling](https://github.com/ericmjl/mia-stats/blob/master/sterilization/sterilization.ipynb) for colleagues testing the efficacy of phone sterilization tools.
-        - Delivered tutorials and talks on Network Analysis and Bayesian statistical methods at annual Python conferences, including PyCon, SciPy, and PyData.
+  - company: Massachusetts Institute of Technology
+    title: ScD Candidate
+    location: Cambridge MA
+    timeperiod: August 2011-May 2017
+    description: |
+      - Developed a scalable, network-based phylogenetic heuristic algorithm for detecting reassortant influenza viruses using 18,632 fully sequenced virus genomes that improved our capacity to detect reassortment events by two orders of magnitude.
+      - The algorithm was used in a lead-author study (published in [PNAS](http://www.pnas.org/content/113/19/5335.full)) providing systematic evidence that genome shuffling is important for host switching, and a co-authored study (published in [Ecology Letters](http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract)) that showed that reassortment is a strategy for viral gene persistence in wild animal reservoirs.
+      - Contributed [reproducible data analysis](https://github.com/runstadler-lab/Seal-H3N8-Image-Analysis) for colleagues through fluorescent image quantification and genomic analysis in studies that refuted binding properties of novel influenza viruses.
+      - Performed [Bayesian statistical modelling](https://github.com/ericmjl/mia-stats/blob/master/sterilization/sterilization.ipynb) for colleagues testing the efficacy of phone sterilization tools.
+      - Delivered tutorials and talks on Network Analysis and Bayesian statistical methods at annual Python conferences, including PyCon, SciPy, and PyData.
 
-    - company: The University of British Columbia
-      title: Undergraduate Researcher
-      location: Vancouver BC
-      timeperiod: June 2006-May 2010
-      description: |
-        - Investigated the role of T cells in intestinal inflammation and fibrosis in a Salmonella typhimurium-induced model of gut inflammation, leading to First Prize Poster ([Rising Stars of Research 2008](https://www.evernote.com/l/AANJS_A9iKZAMLGYqJDduTxiiI2ZNf43zHM)) and Best Talk (Multidisciplinary Undergraduate Research Conference 2009) awards.
-        - Co-founded the [first UBC International Genetically Engineered Machines (iGEM) team](http://2009.igem.org/Team:British_Columbia), where we achieved a Gold status standing in our first year of competition.
-        - Served as a [Peer Academic Coach](https://science.ubc.ca/students/spac), guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.
+  - company: The University of British Columbia
+    title: Undergraduate Researcher
+    location: Vancouver BC
+    timeperiod: June 2006-May 2010
+    description: |
+      - Investigated the role of T cells in intestinal inflammation and fibrosis in a Salmonella typhimurium-induced model of gut inflammation, leading to First Prize Poster ([Rising Stars of Research 2008](https://www.evernote.com/l/AANJS_A9iKZAMLGYqJDduTxiiI2ZNf43zHM)) and Best Talk (Multidisciplinary Undergraduate Research Conference 2009) awards.
+      - Co-founded the [first UBC International Genetically Engineered Machines (iGEM) team](http://2009.igem.org/Team:British_Columbia), where we achieved a Gold status standing in our first year of competition.
+      - Served as a [Peer Academic Coach](https://science.ubc.ca/students/spac), guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.
 
 education:
-    - degree: Sc.D.
-      school: Massachusetts Institute of Technology
-      department: Department of Biological Engineering
-      location: Cambridge MA
-      timeperiod: August 2011-May 2017
+  - degree: Sc.D.
+    school: Massachusetts Institute of Technology
+    department: Department of Biological Engineering
+    location: Cambridge MA
+    timeperiod: August 2011-May 2017
 
-    - degree: B.Sc.
-      school: The University of British Columbia
-      department: Integrated Sciences
-      location: Vancouver BC
-      timeperiod: June 2006-May 2010
+  - degree: B.Sc.
+    school: The University of British Columbia
+    department: Integrated Sciences
+    location: Vancouver BC
+    timeperiod: June 2006-May 2010
 
 skills:
-    - type: Languages and Tools
-      description: Programming languages and tools that I use in my day-to-day.
-      items:
-        - Python
-        - HTML
-        - CSS
-        - bash scripting
-        - git
-        - Illustrator
-        - Indesign
-        - Photoshop
+  - type: Languages and Tools
+    description: Programming languages and tools that I use in my day-to-day.
+    items:
+      - Python
+      - HTML
+      - CSS
+      - bash scripting
+      - git
+      - Illustrator
+      - Indesign
+      - Photoshop
 
-    - type: Packages
-      description: Specific Python packages that I have proficiency with.
-      items:
-        - Pandas
-        - PyMC3 (Bayesian statistics)
-        - Flask
-        - scikit-learn
-        - scikit-image
-        - Keras
-        - NetworkX
-        - Mesa
+  - type: Packages
+    description: Specific Python packages that I have proficiency with.
+    items:
+      - Pandas
+      - PyMC3 (Bayesian statistics)
+      - Flask
+      - scikit-learn
+      - scikit-image
+      - Keras
+      - NetworkX
+      - Mesa
 
-    - type: ML/Stats
-      description: Concepts and ideas that I have mastery over.
-      items:
-        - network science
-        - machine/deep learning
-        - Bayesian inference
-        - graphical models
-        - agent-based models
+  - type: ML/Stats
+    description: Concepts and ideas that I have mastery over.
+    items:
+      - network science
+      - machine/deep learning
+      - Bayesian inference
+      - graphical models
+      - agent-based models
 
-    - type: Life Sciences
-      description: Domain expertise gained during my education.
-      items:
-        - Microbiology
-        - virology
-        - biochemistry
-        - molecular biology
+  - type: Life Sciences
+    description: Domain expertise gained during my education.
+    items:
+      - Microbiology
+      - virology
+      - biochemistry
+      - molecular biology
 
 publications:
-    - title: Reticulate evolution is favored in influenza niche switching
-      url: http://www.pnas.org/content/113/19/5335.full
-      journal: PNAS
-      year: 2016
+  - title: Reticulate evolution is favored in influenza niche switching
+    url: http://www.pnas.org/content/113/19/5335.full
+    journal: PNAS
+    year: 2016
+    theme: influenza
 
-    - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
-      url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
-      journal: Emerging Infectious Diseases
-      year: 2017
+  - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
+    journal: Emerging Infectious Diseases
+    year: 2017
+    theme: influenza
 
-    - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
-      url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
-      journal: Ecology Letters
-      year: 2016
+  - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
+    url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
+    journal: Ecology Letters
+    year: 2016
+    theme: influenza
 
-    - title: Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential
-      url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
-      journal: PLOS Pathogens
-      year: 2016
+  - title: Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential
+    url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
+    journal: PLOS Pathogens
+    year: 2016
+    theme: influenza
 
-    - title: New England harbor seal H3N8 influenza virus retains avian-like receptor specificity
-      url: https://www.nature.com/articles/srep21428
-      journal: Scientific Reports
-      year: 2016
+  - title: New England harbor seal H3N8 influenza virus retains avian-like receptor specificity
+    url: https://www.nature.com/articles/srep21428
+    journal: Scientific Reports
+    year: 2016
+    theme: influenza
 
-    - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
-      url: https://link.springer.com/article/10.1007/s11262-014-1162-9
-      journal: Virus Genes
-      year: 2015
+  - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
+    url: https://link.springer.com/article/10.1007/s11262-014-1162-9
+    journal: Virus Genes
+    year: 2015
+    theme: influenza
 
-    - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
-      url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
-      journal: Infection, Genetics and Evolution
-      year: 2016
+  - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
+    url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
+    journal: Infection, Genetics and Evolution
+    year: 2016
+    theme: influenza
 
-    - title: "Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds"
-      url: http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502
-      journal: Integrative and Comparative Biology
-      year: 2016
+  - title: "Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds"
+    url: http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502
+    journal: Integrative and Comparative Biology
+    year: 2016
+    theme: influenza
 
-    - title: A real-time surveillance dashboard for monitoring viral phenotype from sequence
-      url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
-      journal: International Journal of Infectious Diseases
-      year: 2016
+  - title: A real-time surveillance dashboard for monitoring viral phenotype from sequence
+    url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
+    journal: International Journal of Infectious Diseases
+    year: 2016
+    theme: influenza
 
-    - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
-      url: https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004
-      journal: Journal of the American Association for Laboratory Animal Science
-      year: 2018
+  - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
+    url: https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004
+    journal: Journal of the American Association for Laboratory Animal Science
+    year: 2018
+    theme: statistics
 
-    - title: Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques
-      url: https://aem.asm.org/content/early/2018/07/09/AEM.01336-18
-      journal: Applied and Environmental Microbiology
-      year: 2018
+  - title: Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques
+    url: https://aem.asm.org/content/early/2018/07/09/AEM.01336-18
+    journal: Applied and Environmental Microbiology
+    year: 2018
+    theme: statistics
 
-    - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
-      url: https://www.biorxiv.org/content/10.1101/597518v2
-      journal: BioRXiv
-      year: 2019
+  - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
+    url: https://www.biorxiv.org/content/10.1101/597518v2
+    journal: BioRXiv
+    year: 2019
+    theme: data science
 
-    - title: "pyjanitor: A Cleaner API for Cleaning Data"
-      url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
-      journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
-      year: 2019
+  - title: "pyjanitor: A Cleaner API for Cleaning Data"
+    url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
+    journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
+    year: 2019
+    theme: data science
 
-    - title: "Functional Atlas of Primary miRNA Maturation by the Microprocessor"
-      url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
-      journal: Molecular Cell
-      year: 2020
+  - title: "Functional Atlas of Primary miRNA Maturation by the Microprocessor"
+    url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
+    journal: Molecular Cell
+    year: 2020
+    theme: data science
+
+paper themes:
+  influenza:
+    - description: |
+      Research on influenza evolution and ecology.
+
+  data science:
+    - description: |
+      Data science
