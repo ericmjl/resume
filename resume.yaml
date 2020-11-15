@@ -219,8 +219,12 @@ publications:
 paper themes:
   influenza:
     - description: |
-      Research on influenza evolution and ecology.
+        Research on influenza evolution and ecology.
 
   data science:
     - description: |
-      Data science
+        Collection of data science publications.
+
+  statistics:
+    - description: |
+        Applications of Bayesian statistical modelling to scientific problems.
