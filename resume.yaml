@@ -19,10 +19,11 @@ experience:
     timeperiod: August 2020-Present
     # Every "description" field should be written as Markdown.
     description: |
-      - Investigator in the Scientific Data Analysis (SDA) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
-      - Spearheaded internal education initiatives to train colleagues on machine learning and statistical methods.
+      - Investigator in the Information Products and Data Sciences (IPDS) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
+      - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment on an internal PaaS.
       - Built autoregressive hidden Markov models to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
       - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
+      - Built Suzuki chemical reaction semantic search engine with [Cihan Soylu](https://www.linkedin.com/in/cihan-soylu/), [Mike Fortunato](https://www.linkedin.com/in/mike-fortunato-a9500a58/), and [John Lopez](https://www.linkedin.com/in/john-lopez-9540a65/) leveraging internal and external data.
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Investigator II/Senior Expert I, Data Science and Statistical Learning
