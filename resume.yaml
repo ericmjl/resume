@@ -20,10 +20,10 @@ experience:
     # Every "description" field should be written as Markdown.
     description: |
       - Investigator in the Information Products and Data Sciences (IPDS) team reporting to [Holger Hoefling](https://www.linkedin.com/in/holger-hoefling-8418905).
-      - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment on an internal PaaS.
-      - Built autoregressive hidden Markov models to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
+      - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment on an internal K8s-based PaaS.
+      - Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
       - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
-      - Built Suzuki chemical reaction semantic search engine with [Cihan Soylu](https://www.linkedin.com/in/cihan-soylu/), [Mike Fortunato](https://www.linkedin.com/in/mike-fortunato-a9500a58/), and [John Lopez](https://www.linkedin.com/in/john-lopez-9540a65/) leveraging internal and external data.
+      - Built Suzuki chemical reaction recommendation and optimization engine with [Cihan Soylu](https://www.linkedin.com/in/cihan-soylu/), [Mike Fortunato](https://www.linkedin.com/in/mike-fortunato-a9500a58/), and [John Lopez](https://www.linkedin.com/in/john-lopez-9540a65/) leveraging internal and external data.
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Investigator II/Senior Expert I, Data Science and Statistical Learning
@@ -44,7 +44,7 @@ experience:
       - Investigator in the Scientific Data Analysis (SDA) team reporting to [Mark Borowsky](https://www.linkedin.com/in/borowsky/).
       - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
       - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
-      - Assisted in the analysis of high throughput DROSHA cleavage data, with one paper currently in writing.
+      - Assisted in the analysis of high throughput DROSHA cleavage data.
       - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery with [Clayton Springer](https://www.linkedin.com/in/clayton-springer-5a48072/)) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA with [Brant Peterson](https://www.linkedin.com/in/brant-peterson-b390a51/)).
 
   - company: Insight Data Science
@@ -99,39 +99,38 @@ skills:
       - CSS
       - bash scripting
       - git
-      - Illustrator
-      - Indesign
-      - Photoshop
 
   - type: Packages
     description: Specific Python packages that I have proficiency with.
     items:
       - Pandas
-      - PyMC3 (Bayesian statistics)
+      - PyMC3
       - Flask
       - scikit-learn
-      - scikit-image
-      - Keras
+      - jax
       - NetworkX
       - Mesa
 
   - type: ML/Stats
-    description: Concepts and ideas that I have mastery over.
+    description: Concepts and ideas that I am comfortable addressing questions on.
     items:
       - network science
-      - machine/deep learning
-      - Bayesian inference
-      - graphical models
+      - traditional machine learning
+      - graph neural networks
+      - bayesian inference
       - agent-based models
+      - causal modelling
 
-  - type: Life Sciences
-    description: Domain expertise gained during my education.
+  - type: Life Sciences & Chemistry
+    description: Domain expertise gained during my education and prior experience.
     items:
-      - Microbiology
+      - microbiology
       - virology
       - biochemistry
       - molecular biology
+      - QSAR modelling
 
+# publications section includes preprints
 publications:
   - title: Reticulate evolution is favored in influenza niche switching
     url: http://www.pnas.org/content/113/19/5335.full
@@ -211,6 +210,12 @@ publications:
     year: 2019
     theme: data science
 
+  - title: Reimplementing UniRep in JAX
+    url: https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1
+    journal: BioRXiv
+    year: 2020
+    theme: data science
+
   - title: "Functional Atlas of Primary miRNA Maturation by the Microprocessor"
     url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
     journal: Molecular Cell
@@ -219,9 +224,7 @@ publications:
 
 paper themes:
   influenza:
-    - description: |
-      Research on influenza evolution and ecology.
+    - description: Research on influenza evolution and ecology.
 
   data science:
-    - description: |
-      Data science
+    - description: Data science

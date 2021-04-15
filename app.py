@@ -49,6 +49,7 @@ def read_resume(markup=True):
 def make_html():
     resume = read_resume(markup=True)
     html = render_template("resume.html", resume=resume)
+    write_html(resume)
     return html
 
 
