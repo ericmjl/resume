@@ -13,15 +13,15 @@ contact:
 
   - name: Github
     href: https://github.com/ericmjl
-    icon: fa-github-square
+    icon: fa-github
 
   - name: LinkedIn
     href: https://www.linkedin.com/in/ericmjl
-    icon: fa-linkedin-square
+    icon: fa-linkedin
 
   - name: Greater Boston Area
     href: https://goo.gl/maps/K3NoBPHmMPc9DS6a7
-    icon: fa-globe
+    icon: fa-map-marker
 
 experience:
   # Use this entry as an example that can be copied/pasted.
