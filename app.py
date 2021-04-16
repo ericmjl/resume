@@ -38,7 +38,7 @@ def read_resume(markup=True):
     Read the resume from disk.
     """
     with open("resume.yaml", "r+") as f:
-        resume = yaml.load(f)
+        resume = yaml.safe_load(f)
 
     if markup:
         for exp in resume["experience"]:
