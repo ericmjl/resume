@@ -4,622 +4,596 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap v4 Imports -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  </style>
+  <link href="./static/nord.css" rel="stylesheet">
+  <title>Eric J. Ma's Resume</title>
   <style>
-    /*
- * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
- *
- * Project:    Nord
- * Version:    0.2.0
- * Repository: https://github.com/arcticicestudio/nord
- * License:    MIT
- * References:
- *   https://www.w3.org/TR/css-variables
- *   https://www.w3.org/TR/selectors/#root-pseudo
- *   https://drafts.csswg.org/css-variables
- *   https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
- *   http://warpspire.com/kss
- *   https://github.com/kss-node/kss-node
- */
-
-    /*
-An arctic, north-bluish color palette.
-Created for the clean- and minimal flat design pattern to achieve a optimal focus and readability for code syntax
-highlighting and UI.
-It consists of a total of sixteen, carefully selected, dimmed pastel colors for a eye-comfortable, but yet colorful
-ambiance.
-
-Styleguide Nord
-*/
-
-    :root {
-      /*
-  Base component color of "Polar Night".
-
-  Used for texts, backgrounds, carets and structuring characters like curly- and square brackets.
-
-  Markup:
-  <div style="background-color:#2e3440; width=60; height=60"></div>
-
-  Styleguide Nord - Polar Night
-  */
-      --nord0: #2e3440;
-
-      /*
-  Lighter shade color of the base component color.
-
-  Used as a lighter background color for UI elements like status bars.
-
-  Markup:
-  <div style="background-color:#3b4252; width=60; height=60"></div>
-
-  Styleguide Nord - Polar Night
-  */
-      --nord1: #3b4252;
-
-      /*
-  Lighter shade color of the base component color.
-
-  Used as line highlighting in the editor.
-  In the UI scope it may be used as selection- and highlight color.
-
-  Markup:
-  <div style="background-color:#434c5e; width=60; height=60"></div>
-
-  Styleguide Nord - Polar Night
-  */
-      --nord2: #434c5e;
-
-      /*
-  Lighter shade color of the base component color.
-
-  Used for comments, invisibles, indent- and wrap guide marker.
-  In the UI scope used as pseudoclass color for disabled elements.
-
-  Markup:
-  <div style="background-color:#4c566a; width=60; height=60"></div>
-
-  Styleguide Nord - Polar Night
-  */
-      --nord3: #4c566a;
-
-      /*
-  Base component color of "Snow Storm".
-
-  Main color for text, variables, constants and attributes.
-  In the UI scope used as semi-light background depending on the theme shading design.
-
-  Markup:
-  <div style="background-color:#d8dee9; width=60; height=60"></div>
-
-  Styleguide Nord - Snow Storm
-  */
-      --nord4: #d8dee9;
-
-      /*
-  Lighter shade color of the base component color.
-
-  Used as a lighter background color for UI elements like status bars.
-  Used as semi-light background depending on the theme shading design.
-
-  Markup:
-  <div style="background-color:#e5e9f0; width=60; height=60"></div>
-
-  Styleguide Nord - Snow Storm
-  */
-      --nord5: #e5e9f0;
-
-      /*
-  Lighter shade color of the base component color.
-
-  Used for punctuations, carets and structuring characters like curly- and square brackets.
-  In the UI scope used as background, selection- and highlight color depending on the theme shading design.
-
-  Markup:
-  <div style="background-color:#eceff4; width=60; height=60"></div>
-
-  Styleguide Nord - Snow Storm
-  */
-      --nord6: #eceff4;
-
-      /*
-  Bluish core color.
-
-  Used for classes, types and documentation tags.
-
-  Markup:
-  <div style="background-color:#8fbcbb; width=60; height=60"></div>
-
-  Styleguide Nord - Frost
-  */
-      --nord7: #8fbcbb;
-
-      /*
-  Bluish core accent color.
-
-  Represents the accent color of the color palette.
-  Main color for primary UI elements and methods/functions.
-
-  Can be used for
-    - Markup quotes
-    - Markup link URLs
-
-  Markup:
-  <div style="background-color:#88c0d0; width=60; height=60"></div>
-
-  Styleguide Nord - Frost
-  */
-      --nord8: #88c0d0;
-
-      /*
-  Bluish core color.
-
-  Used for language-specific syntactic/reserved support characters and keywords, operators, tags, units and
-  punctuations like (semi)colons,commas and braces.
-
-  Markup:
-  <div style="background-color:#81a1c1; width=60; height=60"></div>
-
-  Styleguide Nord - Frost
-  */
-      --nord9: #81a1c1;
-
-      /*
-  Bluish core color.
-
-  Used for markup doctypes, import/include/require statements, pre-processor statements and at-rules (`@`).
-
-  Markup:
-  <div style="background-color:#5e81ac; width=60; height=60"></div>
-
-  Styleguide Nord - Frost
-  */
-      --nord10: #5e81ac;
-
-      /*
-  Colorful component color.
-
-  Used for errors, git/diff deletion and linter marker.
-
-  Markup:
-  <div style="background-color:#bf616a; width=60; height=60"></div>
-
-  Styleguide Nord - Aurora
-  */
-      --nord11: #bf616a;
-
-      /*
-  Colorful component color.
-
-  Used for annotations.
-
-  Markup:
-  <div style="background-color:#d08770; width=60; height=60"></div>
-
-  Styleguide Nord - Aurora
-  */
-      --nord12: #d08770;
-
-      /*
-  Colorful component color.
-
-  Used for escape characters, regular expressions and markup entities.
-  In the UI scope used for warnings and git/diff renamings.
-
-  Markup:
-  <div style="background-color:#ebcb8b; width=60; height=60"></div>
-
-  Styleguide Nord - Aurora
-  */
-      --nord13: #ebcb8b;
-
-      /*
-  Colorful component color.
-
-  Main color for strings and attribute values.
-  In the UI scope used for git/diff additions and success visualizations.
-
-  Markup:
-  <div style="background-color:#a3be8c; width=60; height=60"></div>
-
-  Styleguide Nord - Aurora
-  */
-      --nord14: #a3be8c;
-
-      /*
-  Colorful component color.
-
-  Used for numbers.
-
-  Markup:
-  <div style="background-color:#b48ead; width=60; height=60"></div>
-
-  Styleguide Nord - Aurora
-  */
-      --nord15: #b48ead;
+    .bg-nord-light {
+      background-color: var(--nord6);
     }
 
-    .bg-nord {
-      color: var(--nord4);
-      background-color: var(--nord0);
+    .bg-green {
+      background-color: var(--nord7);
     }
 
-    .card-nord {
-      color: var(--nord4);
-      background-color: var(--nord3);
+    .bg-yellow {
+      background-color: var(--nord13);
     }
 
-    .card-header-nord {
-      color: var(--nord5);
-      background-color: var(--nord2)
+    .bg-teal {
+      background-color: var(--nord8);
     }
 
-    .text-muted-nord {
-      color: var(--nord9)
+    .bg-red {
+      background-color: var(--nord12);
     }
 
-    a {
-      color: var(--nord13);
+    .box-shadow {
+      box-shadow: 0px 0px 20px var(--nord4);
     }
 
-    a:hover {
-      color: var(--nord7);
+    .headshot {
+      max-width: 150px;
+      max-height: 150px;
+      display: block;
+      margin: auto;
     }
 
-    small {
-      color: var(--nord9);
+    .transition {
+      transition: all 500ms;
     }
 
-    .list-group-item {
-      background-color: var(--nord3)
+    .card:hover {
+      transform: scale(1.02);
     }
 
-    .btn-nord {
-      color: var(--nord4);
-      background-color: var(--nord1)
-    }
-
-    .btn-nord:hover {
-      color: var(--nord7);
+    img:hover {
+      transform: scale(1.02);
     }
   </style>
-  <title>Eric J. Ma's Resume</title>
 </head>
 
-<body class="bg-nord">
+<body class="bg-nord-light">
   <div class="container">
-    <div class="row" id="name-contact-row">
-      <div class="col-12 text-center" id="name-contact-col">
-        <p></p>
-        <h1>
-          Eric
-          
-          J.
-          
-          Ma
-        </h1>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <a href="http://shortwhale.com/ericmjl" type="button" class="btn btn-nord">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            Email
-          </a>
-          <a href="https://www.linkedin.com/in/ericmjl" type="button" class="btn btn-nord">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            LinkedIn
-          </a>
-          <a href="https://github.com/ericmjl" type="button" class="btn btn-nord">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-            GitHub
-          </a>
-          <a href="https://ericmjl.github.io/" type="button" class="btn btn-nord">
-            <i class="fa fa-globe" aria-hidden="true"></i>
-            Website
-          </a>
-          <a type="button" class="btn btn-nord">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            North Quincy, MA
-          </a>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row" id="skills-title-row">
-      <div class="col-12" id="skills-title-col">
-        <h2>
-          <i class="fa fa-wrench" aria-hidden="true"></i>
-          Skills
-        </h2>
-      </div>
-    </div>
-    <div class="card-group">
-      
-      <div class="card card-nord">
-        <div class="card-header card-header-nord">
-          <h5>Languages and Tools</h5>
-          <small class="text-muted-nord">
-            <p>Programming languages and tools that I use in my day-to-day.</p>
-          </small>
-        </div>
-        <div class="card-body">
-          <p class="card-text"> Python, HTML, CSS, bash scripting, git</p>
-        </div>
-      </div>
-      
-      <div class="card card-nord">
-        <div class="card-header card-header-nord">
-          <h5>Packages</h5>
-          <small class="text-muted-nord">
-            <p>Specific Python packages that I have proficiency with.</p>
-          </small>
-        </div>
-        <div class="card-body">
-          <p class="card-text"> Pandas, PyMC3, Flask, scikit-learn, jax, NetworkX, Mesa</p>
-        </div>
-      </div>
-      
-      <div class="card card-nord">
-        <div class="card-header card-header-nord">
-          <h5>ML/Stats</h5>
-          <small class="text-muted-nord">
-            <p>Concepts and ideas that I am comfortable addressing questions on.</p>
-          </small>
-        </div>
-        <div class="card-body">
-          <p class="card-text"> network science, traditional machine learning, graph neural networks, bayesian inference, agent-based models, causal modelling</p>
-        </div>
-      </div>
-      
-      <div class="card card-nord">
-        <div class="card-header card-header-nord">
-          <h5>Life Sciences & Chemistry</h5>
-          <small class="text-muted-nord">
-            <p>Domain expertise gained during my education and prior experience.</p>
-          </small>
-        </div>
-        <div class="card-body">
-          <p class="card-text"> microbiology, virology, biochemistry, molecular biology, QSAR modelling</p>
-        </div>
-      </div>
-      
-    </div>
-    <br>
-    <div class="row" id="experience-row">
-      <div class="col-12">
-        <h2>
-          <i class="fa fa-code" aria-hidden="true"></i>
-          Experience
-        </h2>
-      </div>
-      <div class="container" id="experience-details">
-        
-        <div class="card card-nord" id="Novartis Institutes for Biomedical Research (NIBR)-card">
-          <div class="card-header card-header-nord">
-            <h5 class="card-title">Senior Expert II/Investigator III, Data Science and Statistical Learning, Novartis Institutes for Biomedical Research (NIBR)</h5>
-            <h6 class="card-subtitle text-muted-nord">August 2020-Present, Cambridge MA</h6>
+    <div id="content">
+      <div class="row" id="name-contact-row">
+        <div class="col-12 text-center" id="name-contact-col">
+          <br>
+          <img class="headshot box-shadow rounded-circle transition" src="./static/headshot.jpg">
+          <br>
+          <h1>Eric J. Ma</h1>
+          <div class="btn-group" role="group">
+            
+            <a href="http://shortwhale.com/ericmjl" class="btn btn-bg btn-text">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              Email
+            </a>
+            
+            <a href="https://ericmjl.github.io/" class="btn btn-bg btn-text">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              Website
+            </a>
+            
+            <a href="https://github.com/ericmjl" class="btn btn-bg btn-text">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              Github
+            </a>
+            
+            <a href="https://www.linkedin.com/in/ericmjl" class="btn btn-bg btn-text">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+            
+            <a href="https://goo.gl/maps/K3NoBPHmMPc9DS6a7" class="btn btn-bg btn-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              Greater Boston Area
+            </a>
+            
           </div>
-          <div class="card-body">
-            <p class="card-text"><ul>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div class="row" id="skills-title-row">
+        <div class="col-12" id="skills-title-col">
+          <h3 class="text-center">
+            <!-- <i class="fa fa-wrench" aria-hidden="true"></i> -->
+            Skills
+          </h3>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="skills-content-row">
+        <div class="col-12">
+          
+          <div class="card box-shadow transition" id="Languages and Tools-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-teal">
+                <div class="card-body">
+                  <h5 class="card-title text-right">Languages and Tools</h5>
+                  <small>Programming languages and tools that I use in my day-to-day.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <p class="card-text"><p>I have been programming in Python for over 8 years,
+creating analyses reports in Jupyter notebooks,
+writing tutorials on analytics packages,
+and developing software tools for high performance computing and data visualization.
+My HTML and CSS skills are honed on my personal website and resume.</p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="card box-shadow transition" id="Packages-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-teal">
+                <div class="card-body">
+                  <h5 class="card-title text-right">Packages</h5>
+                  <small>Specific Python packages that I have proficiency with.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <p class="card-text"><p>I am a core developer of pyjanitor, PyMC3 and NetworkX.
+I have also made open source contributions to Matplotlib and Bokeh.
+My tutorial collection covers JAX &amp; NumPy, PyMC3, and NetworkX for analytics
+and pytest/pandera for software and data testing.</p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="card box-shadow transition" id="ML/Stats-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-teal">
+                <div class="card-body">
+                  <h5 class="card-title text-right">ML/Stats</h5>
+                  <small>Concepts and ideas that I am comfortable addressing questions on.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <p class="card-text"><p>I have experience developing bespoke Bayesian models,
+including Bayesian neural networks in PyMC3
+and Gaussian process models with neural tangents by Google.
+In addition, I have designed end-to-end
+efficient graph neural network data structures and models trained with JAX.</p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="card box-shadow transition" id="Life Sciences & Chemistry-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-teal">
+                <div class="card-body">
+                  <h5 class="card-title text-right">Life Sciences & Chemistry</h5>
+                  <small>Domain expertise gained during my education and prior experience.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <p class="card-text"><p>Leveraging my prior experience as a benchside synthetic biologist,
+I have contributed principled design of experiments
+on multifactorial high throughput measurements leveraging Bayesian model uncertainties.
+Additionally, I have built massively parallelized QSAR and protein property prediction models.
+Finally, I have taken classes on immunology, molecular biology, virology and biochemistry,
+allowing me to quickly contribute productively on a wide variety of life sciences projects.</p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row" id="experience-title-row">
+        <div class="col-12">
+          <h3 class="text-center">
+            <!-- <i class="fa fa-code" aria-hidden="true"></i> -->
+            Experience
+          </h3>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="experience-content-row">
+        <div id="experience-details">
+          
+          <div class="card box-shadow transition" id="Novartis Institutes for Biomedical Research (NIBR)-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-green">
+                <div class="card-body">
+                  <h5 class="card-title">Senior Expert II/Investigator III, Data Science and Statistical Learning</h5>
+                  <small>Novartis Institutes for Biomedical Research (NIBR)</small>
+                  <br>
+                  <small>August 2020-Present, Cambridge MA
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h6>Accomplishments and Responsibilities:</h6>
+                  <p class="card-text"><ul>
 <li>Investigator in the Information Products and Data Sciences (IPDS) team.</li>
-<li>Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment on an internal K8s-based PaaS.</li>
-<li>Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with <a href="https://www.linkedin.com/in/zacharybarry/">Zach Barry</a> and <a href="https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/">Nitin Kumar Mittal</a>.</li>
+<li>Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment.</li>
+<li>Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with <a href="https://www.linkedin.com/in/zacharybarry/">Zach Barry</a> and our intern <a href="https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/">Nitin Kumar Mittal</a>.</li>
 <li>Built graph neural network model to predict protein liabilities with <a href="https://www.linkedin.com/in/mei-xiao-8022a85/">Mei Xiao</a> and <a href="https://www.linkedin.com/in/kannansankar/">Kannan Sankar</a>.</li>
 <li>Built Suzuki chemical reaction recommendation and optimization engine with <a href="https://www.linkedin.com/in/cihan-soylu/">Cihan Soylu</a>, <a href="https://www.linkedin.com/in/mike-fortunato-a9500a58/">Mike Fortunato</a>, and <a href="https://www.linkedin.com/in/john-lopez-9540a65/">John Lopez</a> leveraging internal and external data.</li>
 </ul></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        
-        <div class="card card-nord" id="Novartis Institutes for Biomedical Research (NIBR)-card">
-          <div class="card-header card-header-nord">
-            <h5 class="card-title">Investigator II/Senior Expert I, Data Science and Statistical Learning, Novartis Institutes for Biomedical Research (NIBR)</h5>
-            <h6 class="card-subtitle text-muted-nord">September 2018-July 2020, Cambridge MA</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text"><ul>
+          <br>
+          
+          <div class="card box-shadow transition" id="Novartis Institutes for Biomedical Research (NIBR)-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-green">
+                <div class="card-body">
+                  <h5 class="card-title">Investigator II/Senior Expert I, Data Science and Statistical Learning</h5>
+                  <small>Novartis Institutes for Biomedical Research (NIBR)</small>
+                  <br>
+                  <small>September 2018-July 2020, Cambridge MA
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h6>Accomplishments and Responsibilities:</h6>
+                  <p class="card-text"><ul>
 <li>Investigator in the Scientific Data Analysis (SDA) team.</li>
 <li>Co-organized and developed teaching material for machine learning &amp; deep learning workshops and seminars internally at NIBR with colleagues <a href="https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/">Sivakumar Gowrisankar</a>, <a href="https://www.linkedin.com/in/yuan-wang-王元-0b19a822/">Yuan Wang</a>, <a href="https://www.linkedin.com/in/laszlo-urban-4444974/">Laszlo Urban</a>, and Sean Xiao.</li>
 <li>Developed a massively parallelized engine for training, evaluating, and serving machine learning models on internal assay data, with an emphasis on serving prediction uncertainties with NIBR colleagues <a href="https://www.linkedin.com/in/nikolaus-stiefl-39583b25/">Nikolaus Stiefl</a> and <a href="https://www.linkedin.com/in/gregorigerebtzoff/">Gregori Gerebtzoff</a>.</li>
-<li>Developed machine learning workflows to accelerate protein engineering as part of the internal Genesis Labs innovation initiative, with <a href="https://www.linkedin.com/in/arkadij-kummer-78b249b9/">Arkadij Kummer</a> and <a href="https://www.linkedin.com/in/richard-lewis-8916891/">Richard Lewis</a>.</li>
+<li>Developed machine learning workflows to accelerate protein engineering as part of the internal Genesis Labs innovation initiative, with <a href="https://www.linkedin.com/in/richard-lewis-8916891/">Richard Lewis</a> and our intern <a href="https://www.linkedin.com/in/arkadij-kummer-78b249b9/">Arkadij Kummer</a>.</li>
 <li>Accelerated recurrent neural network UniRep using JAX. <a href="https://github.com/ElArkk/jax-unirep">Software</a> and <a href="https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1">preprint</a> available.</li>
 </ul></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        
-        <div class="card card-nord" id="Novartis Institutes for Biomedical Research (NIBR)-card">
-          <div class="card-header card-header-nord">
-            <h5 class="card-title">Investigator I, Data Science & Statistical Learning, Novartis Institutes for Biomedical Research (NIBR)</h5>
-            <h6 class="card-subtitle text-muted-nord">September 2017-August 2018, Cambridge MA</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text"><ul>
+          <br>
+          
+          <div class="card box-shadow transition" id="Novartis Institutes for Biomedical Research (NIBR)-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-green">
+                <div class="card-body">
+                  <h5 class="card-title">Investigator I, Data Science & Statistical Learning</h5>
+                  <small>Novartis Institutes for Biomedical Research (NIBR)</small>
+                  <br>
+                  <small>September 2017-August 2018, Cambridge MA
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h6>Accomplishments and Responsibilities:</h6>
+                  <p class="card-text"><ul>
 <li>Investigator in the Scientific Data Analysis (SDA) team.</li>
 <li>Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.</li>
 <li>Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using <a href="http://docs.pymc.io">PyMC3</a> and <a href="https://github.com/projectmesa/mesa">Mesa</a>.</li>
 <li>Assisted in the analysis of high throughput DROSHA cleavage data.</li>
 <li>Assisted in mentoring two interns, <a href="https://www.linkedin.com/in/stacy-meichle/">Stacy Meichle</a> (Computer Aided Drug Discovery with <a href="https://www.linkedin.com/in/clayton-springer-5a48072/">Clayton Springer</a>) and <a href="https://www.linkedin.com/in/flekschas/">Fritz Lekschas</a> (SDA with <a href="https://www.linkedin.com/in/brant-peterson-b390a51/">Brant Peterson</a>).</li>
 </ul></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        
-        <div class="card card-nord" id="Insight Data Science-card">
-          <div class="card-header card-header-nord">
-            <h5 class="card-title">Health Data Science Fellow, Insight Data Science</h5>
-            <h6 class="card-subtitle text-muted-nord">June 2017-August 2017, Boston MA</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text"><ul>
+          <br>
+          
+          <div class="card box-shadow transition" id="Insight Data Science-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-green">
+                <div class="card-body">
+                  <h5 class="card-title">Health Data Science Fellow</h5>
+                  <small>Insight Data Science</small>
+                  <br>
+                  <small>June 2017-August 2017, Boston MA
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h6>Accomplishments and Responsibilities:</h6>
+                  <p class="card-text"><ul>
 <li>Built <a href="https://fluforecaster.herokuapp.com">Flu Forecaster</a>, a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.</li>
 <li>Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.</li>
 <li>Developed interactive blog post using Flask and Bootstrap, and deployed to Heroku and GitHub.</li>
 <li>Led peer workshops on <a href="https://github.com/ericmjl/minimal-flask-example">web development</a>, deep learning and <a href="https://github.com/ericmjl/pycodestyle-tutorial">code style</a>.</li>
 </ul></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        
-        <div class="card card-nord" id="Massachusetts Institute of Technology-card">
-          <div class="card-header card-header-nord">
-            <h5 class="card-title">ScD Candidate, Massachusetts Institute of Technology</h5>
-            <h6 class="card-subtitle text-muted-nord">August 2011-May 2017, Cambridge MA</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text"><ul>
+          <br>
+          
+          <div class="card box-shadow transition" id="Massachusetts Institute of Technology-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-green">
+                <div class="card-body">
+                  <h5 class="card-title">ScD Candidate</h5>
+                  <small>Massachusetts Institute of Technology</small>
+                  <br>
+                  <small>August 2011-May 2017, Cambridge MA
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h6>Accomplishments and Responsibilities:</h6>
+                  <p class="card-text"><ul>
 <li>Developed a scalable, network-based phylogenetic heuristic algorithm for detecting reassortant influenza viruses using 18,632 fully sequenced virus genomes that improved our capacity to detect reassortment events by two orders of magnitude.</li>
 <li>The algorithm was used in a lead-author study (published in <a href="http://www.pnas.org/content/113/19/5335.full">PNAS</a>) providing systematic evidence that genome shuffling is important for host switching, and a co-authored study (published in <a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract">Ecology Letters</a>) that showed that reassortment is a strategy for viral gene persistence in wild animal reservoirs.</li>
 <li>Contributed <a href="https://github.com/runstadler-lab/Seal-H3N8-Image-Analysis">reproducible data analysis</a> for colleagues through fluorescent image quantification and genomic analysis in studies that refuted binding properties of novel influenza viruses.</li>
 <li>Performed <a href="https://github.com/ericmjl/mia-stats/blob/master/sterilization/sterilization.ipynb">Bayesian statistical modelling</a> for colleagues testing the efficacy of phone sterilization tools.</li>
 <li>Delivered tutorials and talks on Network Analysis and Bayesian statistical methods at annual Python conferences, including PyCon, SciPy, and PyData.</li>
 </ul></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        
-        <div class="card card-nord" id="The University of British Columbia-card">
-          <div class="card-header card-header-nord">
-            <h5 class="card-title">Undergraduate Researcher, The University of British Columbia</h5>
-            <h6 class="card-subtitle text-muted-nord">June 2006-May 2010, Vancouver BC</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text"><ul>
+          <br>
+          
+          <div class="card box-shadow transition" id="The University of British Columbia-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-green">
+                <div class="card-body">
+                  <h5 class="card-title">Undergraduate Researcher</h5>
+                  <small>The University of British Columbia</small>
+                  <br>
+                  <small>June 2006-May 2010, Vancouver BC
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h6>Accomplishments and Responsibilities:</h6>
+                  <p class="card-text"><ul>
 <li>Investigated the role of T cells in intestinal inflammation and fibrosis in a Salmonella typhimurium-induced model of gut inflammation, leading to First Prize Poster (<a href="https://www.evernote.com/l/AANJS_A9iKZAMLGYqJDduTxiiI2ZNf43zHM">Rising Stars of Research 2008</a>) and Best Talk (Multidisciplinary Undergraduate Research Conference 2009) awards.</li>
 <li>Co-founded the <a href="http://2009.igem.org/Team:British_Columbia">first UBC International Genetically Engineered Machines (iGEM) team</a>, where we achieved a Gold status standing in our first year of competition.</li>
 <li>Served as a <a href="https://science.ubc.ca/students/spac">Peer Academic Coach</a>, guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.</li>
 </ul></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <br>
-        
-      </div>
-    </div>
-    <br>
-    <div class="row" id="education-row">
-      <div class="col-12" id="education-title-row">
-        <h2>
-          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          Education
-        </h2>
-      </div>
-    </div>
-    <div class="card-group">
-      
-      <div class="card card-nord">
-        <div class="card-body">
-          <h5 class="card-title">Sc.D., Massachusetts Institute of Technology</h5>
-          <small>Department of Biological Engineering, August 2011-May 2017, Cambridge MA</small>
+          <br>
+          
         </div>
       </div>
-      
-      <div class="card card-nord">
-        <div class="card-body">
-          <h5 class="card-title">B.Sc., The University of British Columbia</h5>
-          <small>Integrated Sciences, June 2006-May 2010, Vancouver BC</small>
+      <br>
+      <br>
+      <div class="row" id="education-title-row">
+        <div class="col-12" id="education-title-row">
+          <h3 class="text-center">
+            <!-- <i class="fa fa-graduation-cap" aria-hidden="true"></i> -->
+            Education
+          </h3>
         </div>
       </div>
-      
-    </div>
+      <br>
+      <div class="row" id="education-content-row">
+        <div id="education-details">
+          
+          <div class="card box-shadow transition">
+            <div class="row g-0">
+              <div class="col-md-3 bg-yellow" id="title">
+                <div class="card-body">
+                  <h5>Massachusetts Institute of Technology</h5>
+                  <small>Department of Biological Engineering</small>
+                  <br>
+                  <small>August 2011-May 2017, Cambridge MA</small>
+                </div>
+              </div>
+              <div class="col-md-9" id="content">
+                <div class="card-body">
+                  <h5>Doctor of Science (Sc.D.)</h5>
+                  <p><p>I did my doctoral training under Prof. Jonathan Runstadler
+in computational influenza evolution and ecology.</p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <div class="card box-shadow transition">
+            <div class="row g-0">
+              <div class="col-md-3 bg-yellow" id="title">
+                <div class="card-body">
+                  <h5>The University of British Columbia</h5>
+                  <small>Integrated Sciences</small>
+                  <br>
+                  <small>June 2006-May 2010, Vancouver BC</small>
+                </div>
+              </div>
+              <div class="col-md-9" id="content">
+                <div class="card-body">
+                  <h5>Bachelor of Science (B.Sc.)</h5>
+                  <p><p>I conducted gut immunology and pathology research in the laboratory of Prof. Brett Finlay
+under the supervision of Dr. Guntram Grassl and Dr. Hongbing Yu.
+I also founded the iGEM team at UBC under Prof. Eric Lagally.</p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row" id="publications-title-row">
+        <div class="col-12" id="publications-title-row">
+          <h3 class="text-center">
+            <!-- <i class="fa fa-bookmark"></i> -->
+            Publications and Preprints
+          </h3>
+        </div>
+      </div>
+      <br>
+      <div class="row" id="publications-content-row">
+        <div class="col-12" id="publications-content">
+          
 
-    <br>
-    <div class="row" id="publications-row">
-      <div class="col-12" id="publications-title-row">
-        <h2><i class="fa fa-bookmark"></i> Publications and Preprints</h2>
-        <ul class="list-group">
+          <div class="card box-shadow transition">
+            <div class="row g-0">
+              <div class="col-md-3 bg-red" id="title">
+                <div class="card-body">
+                  <h5>Data Science</h5>
+                  <small>Manuscripts pertaining to applied data science, and visualization.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <ul>
+                    
+                    <li>
+                      Functional Atlas of Primary miRNA Maturation by the Microprocessor, 2020.
+                      <a href="https://www.sciencedirect.com/science/article/pii/S1097276520307358"><i>Molecular Cell</i></a>
+                    </li>
+                    
+                    <li>
+                      Reimplementing UniRep in JAX, 2020.
+                      <a href="https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1"><i>BioRXiv</i></a>
+                    </li>
+                    
+                    <li>
+                      pyjanitor: A Cleaner API for Cleaning Data, 2019.
+                      <a href="https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf"><i>Proceedings of the 18th Python in Science Conference (SciPy 2019)</i></a>
+                    </li>
+                    
+                    <li>
+                      Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning, 2019.
+                      <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13971"><i>Computer Graphics Forum</i></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
           
-          <li class="list-group-item">
-            <p>Functional Atlas of Primary miRNA Maturation by the Microprocessor (2020)</p>
-            <small><a href="https://www.sciencedirect.com/science/article/pii/S1097276520307358"><i>Molecular Cell</i></a></small>
-          </li>
+
+          <div class="card box-shadow transition">
+            <div class="row g-0">
+              <div class="col-md-3 bg-red" id="title">
+                <div class="card-body">
+                  <h5>Statistics</h5>
+                  <small>Papers where I contributed statistical analyses or developed statistical methods.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <ul>
+                    
+                    <li>
+                      Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques, 2018.
+                      <a href="https://aem.asm.org/content/early/2018/07/09/AEM.01336-18"><i>Applied and Environmental Microbiology</i></a>
+                    </li>
+                    
+                    <li>
+                      Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones, 2018.
+                      <a href="https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004"><i>Journal of the American Association for Laboratory Animal Science</i></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
           
-          <li class="list-group-item">
-            <p>Reimplementing UniRep in JAX (2020)</p>
-            <small><a href="https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1"><i>BioRXiv</i></a></small>
-          </li>
+
+          <div class="card box-shadow transition">
+            <div class="row g-0">
+              <div class="col-md-3 bg-red" id="title">
+                <div class="card-body">
+                  <h5>Influenza</h5>
+                  <small>Papers pertaining to influenza surveillance, evolution and ecology.</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <ul>
+                    
+                    <li>
+                      Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks, 2017.
+                      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/"><i>Emerging Infectious Diseases</i></a>
+                    </li>
+                    
+                    <li>
+                      A real-time surveillance dashboard for monitoring viral phenotype from sequence, 2016.
+                      <a href="http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract"><i>International Journal of Infectious Diseases</i></a>
+                    </li>
+                    
+                    <li>
+                      Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds, 2016.
+                      <a href="http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502"><i>Integrative and Comparative Biology</i></a>
+                    </li>
+                    
+                    <li>
+                      A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells, 2016.
+                      <a href="https://www.sciencedirect.com/science/article/pii/S156713481630137X"><i>Infection, Genetics and Evolution</i></a>
+                    </li>
+                    
+                    <li>
+                      New England harbor seal H3N8 influenza virus retains avian-like receptor specificity, 2016.
+                      <a href="https://www.nature.com/articles/srep21428"><i>Scientific Reports</i></a>
+                    </li>
+                    
+                    <li>
+                      Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential, 2016.
+                      <a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract"><i>PLOS Pathogens</i></a>
+                    </li>
+                    
+                    <li>
+                      Transmission of influenza reflects seasonality of wild birds across the annual cycle, 2016.
+                      <a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract"><i>Ecology Letters</i></a>
+                    </li>
+                    
+                    <li>
+                      Reticulate evolution is favored in influenza niche switching, 2016.
+                      <a href="http://www.pnas.org/content/113/19/5335.full"><i>Proceedings of the National Academies of Science</i></a>
+                    </li>
+                    
+                    <li>
+                      Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan, 2015.
+                      <a href="https://link.springer.com/article/10.1007/s11262-014-1162-9"><i>Virus Genes</i></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
           
-          <li class="list-group-item">
-            <p>pyjanitor: A Cleaner API for Cleaning Data (2019)</p>
-            <small><a href="https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf"><i>Proceedings of the 18th Python in Science Conference (SciPy 2019)</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning (2019)</p>
-            <small><a href="https://www.biorxiv.org/content/10.1101/597518v2"><i>BioRXiv</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques (2018)</p>
-            <small><a href="https://aem.asm.org/content/early/2018/07/09/AEM.01336-18"><i>Applied and Environmental Microbiology</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones (2018)</p>
-            <small><a href="https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004"><i>Journal of the American Association for Laboratory Animal Science</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks (2017)</p>
-            <small><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/"><i>Emerging Infectious Diseases</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>A real-time surveillance dashboard for monitoring viral phenotype from sequence (2016)</p>
-            <small><a href="http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract"><i>International Journal of Infectious Diseases</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds (2016)</p>
-            <small><a href="http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502"><i>Integrative and Comparative Biology</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells (2016)</p>
-            <small><a href="https://www.sciencedirect.com/science/article/pii/S156713481630137X"><i>Infection, Genetics and Evolution</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>New England harbor seal H3N8 influenza virus retains avian-like receptor specificity (2016)</p>
-            <small><a href="https://www.nature.com/articles/srep21428"><i>Scientific Reports</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential (2016)</p>
-            <small><a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract"><i>PLOS Pathogens</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Transmission of influenza reflects seasonality of wild birds across the annual cycle (2016)</p>
-            <small><a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract"><i>Ecology Letters</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Reticulate evolution is favored in influenza niche switching (2016)</p>
-            <small><a href="http://www.pnas.org/content/113/19/5335.full"><i>PNAS</i></a></small>
-          </li>
-          
-          <li class="list-group-item">
-            <p>Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan (2015)</p>
-            <small><a href="https://link.springer.com/article/10.1007/s11262-014-1162-9"><i>Virus Genes</i></a></small>
-          </li>
-          
-        </ul>
+        </div>
       </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-12 text-center">
-        <small>
-          Made with ❤️ using
-          <a href="https://palletsprojects.com/p/flask/">Flask</a>,
-          <a href="https://palletsprojects.com/p/jinja/">Jinja2</a>,
-          and <a href="https://getbootstrap.com/">Bootstrap 4</a>.
-          Source at <a href="https://github.com/ericmjl/resume">GitHub.</a>
-          Color theme: <a href="https://nordtheme.com">Nord</a>.
-        </small>
-        <hr>
+      <div class="row" id="footer">
+        <div class="col-12 text-center">
+          <small>
+            Made with ❤️ using
+            <a href="https://palletsprojects.com/p/flask/">Flask</a>,
+            <a href="https://palletsprojects.com/p/jinja/">Jinja2</a>,
+            and <a href="https://getbootstrap.com/">Bootstrap 5</a>.
+            Source at <a href="https://github.com/ericmjl/resume">GitHub.</a>
+            Color theme: <a href="https://nordtheme.com">Nord</a>.
+          </small>
+          <br>
+          <br>
+
+        </div>
       </div>
     </div>
   </div>
@@ -628,10 +602,10 @@ Styleguide Nord
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+  integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <!-- FontAwesome embed -->
 <script src="https://use.fontawesome.com/cb9dbe8e41.js"></script>
 
