@@ -36,6 +36,14 @@
       display: block;
       margin: auto;
     }
+
+    .transition {
+      transition: all 1000ms;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
@@ -52,7 +60,7 @@
             {% for contact in resume["contact"] %}
             <a href="{{ contact['href'] }}" class="btn btn-bg btn-text">
               <i class="fa {{ contact['icon'] }}" aria-hidden="true"></i>
-              {{ contact['name'] }}
+              <!-- {{ contact['name'] }} -->
             </a>
             {% endfor %}
           </div>
@@ -64,7 +72,7 @@
       <div class="row" id="skills-title-row">
         <div class="col-12" id="skills-title-col">
           <h3 class="text-center">
-            <i class="fa fa-wrench" aria-hidden="true"></i>
+            <!-- <i class="fa fa-wrench" aria-hidden="true"></i> -->
             Skills
           </h3>
         </div>
@@ -73,7 +81,7 @@
       <div class="row" id="skills-content-row">
         <div class="col-12">
           {% for skill in resume['skills'] %}
-          <div class="card box-shadow" id="{{ skill['type']}}-card">
+          <div class="card box-shadow transition" id="{{ skill['type']}}-card">
             <div class="row g-0">
               <div class="col-md-3 bg-teal">
                 <div class="card-body">
@@ -97,7 +105,7 @@
       <div class="row" id="experience-title-row">
         <div class="col-12">
           <h3 class="text-center">
-            <i class="fa fa-code" aria-hidden="true"></i>
+            <!-- <i class="fa fa-code" aria-hidden="true"></i> -->
             Experience
           </h3>
         </div>
@@ -106,7 +114,7 @@
       <div class="row" id="experience-content-row">
         <div id="experience-details">
           {% for experience in resume['experience'] %}
-          <div class="card box-shadow" id="{{ experience['company']}}-card">
+          <div class="card box-shadow transition" id="{{ experience['company']}}-card">
             <div class="row g-0">
               <div class="col-md-3 bg-green">
                 <div class="card-body">
@@ -133,7 +141,7 @@
       <div class="row" id="education-title-row">
         <div class="col-12" id="education-title-row">
           <h3 class="text-center">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <!-- <i class="fa fa-graduation-cap" aria-hidden="true"></i> -->
             Education
           </h3>
         </div>
@@ -142,7 +150,7 @@
       <div class="row" id="education-content-row">
         <div id="education-details">
           {% for edu in resume["education"] %}
-          <div class="card box-shadow">
+          <div class="card box-shadow transition">
             <div class="row g-0">
               <div class="col-md-3 bg-yellow" id="title">
                 <div class="card-body">
@@ -166,7 +174,10 @@
       <br>
       <div class="row" id="publications-title-row">
         <div class="col-12" id="publications-title-row">
-          <h3 class="text-center"><i class="fa fa-bookmark"></i> Publications and Preprints</h3>
+          <h3 class="text-center">
+            <!-- <i class="fa fa-bookmark"></i> -->
+            Publications and Preprints
+          </h3>
         </div>
       </div>
       <br>
