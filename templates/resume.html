@@ -42,15 +42,15 @@
     }
 
     .transition {
-      transition: all 1000ms;
+      transition: all 500ms;
     }
 
     .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 
     img:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
   </style>
 </head>
@@ -195,17 +195,6 @@
       <br>
       <div class="row" id="publications-content-row">
         <div class="col-12" id="publications-content">
-          <!-- <ul class="list-group" id="publications-list">
-            {% for pub in resume['publications']|sort(attribute='year')|reverse %}
-            {% if loop.index is divisibleby(2) %}
-            <li class="list-group-item">
-              {% else %}
-            <li class="list-group-item">
-              {% endif %}
-              <p>{{ pub['title'] }} ({{ pub['year'] }}). <a href="{{ pub['url'] }}"><i>{{ pub['journal'] }}</i></a></p>
-            </li>
-            {% endfor %}
-          </ul> -->
           {% for theme in resume["publications"] %}
 
           <div class="card box-shadow transition">
@@ -219,7 +208,7 @@
               <div class="col-md-9">
                 <div class="card-body">
                   <ul>
-                    {% for paper in theme["publications"] %}
+                    {% for paper in theme["publications"]|sort(attribute="year")|reverse %}
                     <li>
                       {{ paper["title"] }}, {{ paper["year"] }}.
                       <a href="{{ paper['url'] }}"><i>{{ paper['journal'] }}</i></a>

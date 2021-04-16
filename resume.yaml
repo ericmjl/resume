@@ -187,11 +187,11 @@ publications:
         year: 2018
 
   - theme: Influenza
-    description: Papers pertaining to influenza evolution and ecology.
+    description: Papers pertaining to influenza surveillance, evolution and ecology.
     publications:
       - title: Reticulate evolution is favored in influenza niche switching
         url: http://www.pnas.org/content/113/19/5335.full
-        journal: PNAS
+        journal: Proceedings of the National Academies of Science
         year: 2016
 
       - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
