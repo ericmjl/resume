@@ -14,12 +14,27 @@
       background-color: var(--nord6);
     }
 
-    .bg-left {
+    .bg-green {
       background-color: var(--nord7);
+    }
+
+    .bg-yellow {
+      background-color: var(--nord13);
+    }
+
+    .bg-teal {
+      background-color: var(--nord8);
     }
 
     .box-shadow {
       box-shadow: 0px 0px 20px var(--nord4);
+    }
+
+    .headshot {
+      max-width: 150px;
+      max-height: 150px;
+      display: block;
+      margin: auto;
     }
   </style>
 </head>
@@ -29,7 +44,9 @@
     <div id="content">
       <div class="row" id="name-contact-row">
         <div class="col-12 text-center" id="name-contact-col">
-          <p></p>
+          <br>
+          <img class="headshot rounded-circle" src="{{ url_for('static', filename='headshot.jpg') }}">
+          <br>
           <h1>{{ resume["name"] }}</h1>
           <div class="btn-group" role="group">
             {% for contact in resume["contact"] %}
@@ -42,6 +59,7 @@
         </div>
       </div>
       <br>
+      <hr>
       <br>
       <div class="row" id="skills-title-row">
         <div class="col-12" id="skills-title-col">
@@ -54,21 +72,24 @@
       <br>
       <div class="row" id="skills-content-row">
         <div class="col-12">
-          <div class="card-group" id="skills-items">
-            {% for skill in resume['skills'] %}
-            <div class="card">
-              <div class="card-header">
-                <h5>{{ skill["type"] }}</h5>
-                <small class="text-muted">
-                  <p>{{ skill["description"] }}</p>
-                </small>
+          {% for skill in resume['skills'] %}
+          <div class="card box-shadow" id="{{ skill['type']}}-card">
+            <div class="row g-0">
+              <div class="col-md-3 bg-teal">
+                <div class="card-body">
+                  <h5 class="card-title text-right">{{ skill['type'] }}</h5>
+                </div>
               </div>
-              <div class="card-body">
-                <p class="card-text"> {{ skill["items"]|join(", ") }}</p>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <small class="text-muted">{{ skill['description'] }}</small>
+                  <p class="card-text">{{ skill["items"]|join(", ") }}</p>
+                </div>
               </div>
             </div>
-            {% endfor %}
           </div>
+          <br>
+          {% endfor %}
         </div>
       </div>
       <br>
@@ -87,12 +108,12 @@
           {% for experience in resume['experience'] %}
           <div class="card box-shadow" id="{{ experience['company']}}-card">
             <div class="row g-0">
-              <div class="col-md-3 bg-left">
+              <div class="col-md-3 bg-green">
                 <div class="card-body">
                   <h5 class="card-title">{{ experience['title'] }}</h5>
                   <h6>{{ experience['company'] }}</h6>
-                  <h6 class="card-subtitle">{{ experience['timeperiod'] }}, {{ experience['location'] }}
-                  </h6>
+                  <small class="card-subtitle">{{ experience['timeperiod'] }}, {{ experience['location'] }}
+                  </small>
                 </div>
               </div>
               <div class="col-md-9">
@@ -121,25 +142,24 @@
       <div class="row" id="education-content-row">
         <div id="education-details">
           {% for edu in resume["education"] %}
-          <div class="card">
+          <div class="card box-shadow">
             <div class="row g-0">
-              <div class="col-md-3 bg-left " id="title">
+              <div class="col-md-3 bg-yellow" id="title">
                 <div class="card-body">
                   <h5>{{ edu["school"] }}</h5>
+                  <small>{{ edu["timeperiod"] }}, {{ edu["location"] }}</small>
                 </div>
               </div>
               <div class="col-md-9" id="content">
                 <div class="card-body">
                   <h5>{{ edu["degree"] }}</h5>
-                  <h6>{{ edu["department"] }}</h6>
-                  <h6>{{ edu["timeperiod"] }}, {{ edu["location"] }}</h6>
+                  <p>{{ edu["department"] }}</p>
                 </div>
               </div>
             </div>
           </div>
           <br>
           {% endfor %}
-
         </div>
       </div>
       <br>
@@ -159,21 +179,20 @@
               {% else %}
             <li class="list-group-item">
               {% endif %}
-              <p>{{ pub['title'] }} ({{ pub['year'] }})</p>
-              <small><a href="{{ pub['url'] }}"><i>{{ pub['journal'] }}</i></a></small>
+              <p>{{ pub['title'] }} ({{ pub['year'] }}). <a href="{{ pub['url'] }}"><i>{{ pub['journal'] }}</i></a></p>
             </li>
             {% endfor %}
           </ul>
         </div>
       </div>
       <hr>
-      <div class="row">
+      <div class="row" id="footer">
         <div class="col-12 text-center">
           <small>
             Made with ❤️ using
             <a href="https://palletsprojects.com/p/flask/">Flask</a>,
             <a href="https://palletsprojects.com/p/jinja/">Jinja2</a>,
-            and <a href="https://getbootstrap.com/">Bootstrap 4</a>.
+            and <a href="https://getbootstrap.com/">Bootstrap 5</a>.
             Source at <a href="https://github.com/ericmjl/resume">GitHub.</a>
             Color theme: <a href="https://nordtheme.com">Nord</a>.
           </small>
