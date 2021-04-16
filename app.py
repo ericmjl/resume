@@ -3,6 +3,7 @@ import yaml
 from flask import Flask, Markup, redirect, render_template
 from jinja2 import Template
 from markdown import markdown as md
+import click
 
 app = Flask(__name__)
 
@@ -40,9 +41,16 @@ def read_resume(markup=True):
     with open("resume.yaml", "r+") as f:
         resume = yaml.safe_load(f)
 
+    elaboration_content = [
+        "experience",
+        "education",
+        "skills",
+    ]
+
     if markup:
-        for exp in resume["experience"]:
-            exp["description"] = Markup(md(exp["description"]))
+        for content in elaboration_content:
+            for i, section in enumerate(resume[content]):
+                resume[content][i]["elaboration"] = Markup(md(section["elaboration"]))
     return resume
 
 
