@@ -1,15 +1,27 @@
-details:
-  given_name: Eric
-  middle_name: J.
-  surname: Ma
+name: Eric J. Ma
+
+headshot: headshot.jpg
 
 contact:
-  phone: 857-209-1375
-  email: http://shortwhale.com/ericmjl
-  website: https://ericmjl.github.io/
-  location: North Quincy, MA
-  github: ericmjl
-  linkedin: https://www.linkedin.com/in/ericmjl
+  - name: Email
+    href: http://shortwhale.com/ericmjl
+    icon: fa-envelope
+
+  - name: Website
+    href: https://ericmjl.github.io/
+    icon: fa-globe
+
+  - name: Github
+    href: https://github.com/ericmjl
+    icon: fa-github-square
+
+  - name: LinkedIn
+    href: https://www.linkedin.com/in/ericmjl
+    icon: fa-linkedin-square
+
+  - name: Greater Boston Area
+    href: https://goo.gl/maps/K3NoBPHmMPc9DS6a7
+    icon: fa-globe
 
 experience:
   # Use this entry as an example that can be copied/pasted.
@@ -20,7 +32,7 @@ experience:
     # Every "description" field should be written as Markdown.
     description: |
       - Investigator in the Information Products and Data Sciences (IPDS) team.
-      - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment on an internal K8s-based PaaS.
+      - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment.
       - Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
       - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
       - Built Suzuki chemical reaction recommendation and optimization engine with [Cihan Soylu](https://www.linkedin.com/in/cihan-soylu/), [Mike Fortunato](https://www.linkedin.com/in/mike-fortunato-a9500a58/), and [John Lopez](https://www.linkedin.com/in/john-lopez-9540a65/) leveraging internal and external data.
@@ -78,13 +90,13 @@ experience:
       - Served as a [Peer Academic Coach](https://science.ubc.ca/students/spac), guiding first- and second-year students towards academic success through building good habits on learning strategies and time management.
 
 education:
-  - degree: Sc.D.
+  - degree: Doctor of Science (Sc.D.)
     school: Massachusetts Institute of Technology
     department: Department of Biological Engineering
     location: Cambridge MA
     timeperiod: August 2011-May 2017
 
-  - degree: B.Sc.
+  - degree: Bachelor of Science (B.Sc.)
     school: The University of British Columbia
     department: Integrated Sciences
     location: Vancouver BC
