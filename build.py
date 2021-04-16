@@ -9,3 +9,8 @@ os.makedirs("site/", exist_ok=True)
 
 resume = read_resume()
 write_html(resume, path="site/index.html")
+
+import shutil
+
+
+shutil.copytree("static", "site/static", )
