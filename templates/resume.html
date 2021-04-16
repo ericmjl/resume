@@ -44,6 +44,10 @@
     .card:hover {
       transform: scale(1.05);
     }
+
+    img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
@@ -53,7 +57,7 @@
       <div class="row" id="name-contact-row">
         <div class="col-12 text-center" id="name-contact-col">
           <br>
-          <img class="headshot rounded-circle" src="{{ url_for('static', filename='headshot.jpg') }}">
+          <img class="headshot rounded-circle transition" src="{{ url_for('static', filename='headshot.jpg') }}">
           <br>
           <h1>{{ resume["name"] }}</h1>
           <div class="btn-group" role="group">
@@ -119,8 +123,9 @@
               <div class="col-md-3 bg-green">
                 <div class="card-body">
                   <h5 class="card-title">{{ experience['title'] }}</h5>
-                  <h6>{{ experience['company'] }}</h6>
-                  <small class="card-subtitle">{{ experience['timeperiod'] }}, {{ experience['location'] }}
+                  <small class="text-muted">{{ experience['company'] }}</small>
+                  <br>
+                  <small class="text-muted">{{ experience['timeperiod'] }}, {{ experience['location'] }}
                   </small>
                 </div>
               </div>
@@ -155,13 +160,15 @@
               <div class="col-md-3 bg-yellow" id="title">
                 <div class="card-body">
                   <h5>{{ edu["school"] }}</h5>
-                  <small>{{ edu["timeperiod"] }}, {{ edu["location"] }}</small>
+                  <small class="text-muted">{{ edu["department"] }}</small>
+                  <br>
+                  <small class="text-muted">{{ edu["timeperiod"] }}, {{ edu["location"] }}</small>
                 </div>
               </div>
               <div class="col-md-9" id="content">
                 <div class="card-body">
                   <h5>{{ edu["degree"] }}</h5>
-                  <p>{{ edu["department"] }}</p>
+                  <p>{{ edu["elaboration"] }}</p>
                 </div>
               </div>
             </div>
@@ -183,7 +190,7 @@
       <br>
       <div class="row" id="publications-content-row">
         <div class="col-12" id="publications-content">
-          <ul class="list-group" id="publications-list">
+          <!-- <ul class="list-group" id="publications-list">
             {% for pub in resume['publications']|sort(attribute='year')|reverse %}
             {% if loop.index is divisibleby(2) %}
             <li class="list-group-item">
@@ -193,7 +200,8 @@
               <p>{{ pub['title'] }} ({{ pub['year'] }}). <a href="{{ pub['url'] }}"><i>{{ pub['journal'] }}</i></a></p>
             </li>
             {% endfor %}
-          </ul>
+          </ul> -->
+
         </div>
       </div>
       <hr>
