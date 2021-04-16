@@ -78,12 +78,12 @@
               <div class="col-md-3 bg-teal">
                 <div class="card-body">
                   <h5 class="card-title text-right">{{ skill['type'] }}</h5>
+                  <small class="text-muted">{{ skill['description'] }}</small>
                 </div>
               </div>
               <div class="col-md-9">
                 <div class="card-body">
-                  <small class="text-muted">{{ skill['description'] }}</small>
-                  <p class="card-text">{{ skill["items"]|join(", ") }}</p>
+                  <p class="card-text">{{ skill["elaboration"] }}</p>
                 </div>
               </div>
             </div>
