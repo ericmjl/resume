@@ -26,6 +26,10 @@
       background-color: var(--nord8);
     }
 
+    .bg-red {
+      background-color: var(--nord12);
+    }
+
     .box-shadow {
       box-shadow: 0px 0px 20px var(--nord4);
     }
@@ -57,14 +61,15 @@
       <div class="row" id="name-contact-row">
         <div class="col-12 text-center" id="name-contact-col">
           <br>
-          <img class="headshot rounded-circle transition" src="{{ url_for('static', filename='headshot.jpg') }}">
+          <img class="headshot box-shadow rounded-circle transition"
+            src="{{ url_for('static', filename='headshot.jpg') }}">
           <br>
           <h1>{{ resume["name"] }}</h1>
           <div class="btn-group" role="group">
             {% for contact in resume["contact"] %}
             <a href="{{ contact['href'] }}" class="btn btn-bg btn-text">
               <i class="fa {{ contact['icon'] }}" aria-hidden="true"></i>
-              <!-- {{ contact['name'] }} -->
+              {{ contact['name'] }}
             </a>
             {% endfor %}
           </div>
@@ -90,7 +95,7 @@
               <div class="col-md-3 bg-teal">
                 <div class="card-body">
                   <h5 class="card-title text-right">{{ skill['type'] }}</h5>
-                  <small class="text-muted">{{ skill['description'] }}</small>
+                  <small>{{ skill['description'] }}</small>
                 </div>
               </div>
               <div class="col-md-9">
@@ -123,9 +128,9 @@
               <div class="col-md-3 bg-green">
                 <div class="card-body">
                   <h5 class="card-title">{{ experience['title'] }}</h5>
-                  <small class="text-muted">{{ experience['company'] }}</small>
+                  <small>{{ experience['company'] }}</small>
                   <br>
-                  <small class="text-muted">{{ experience['timeperiod'] }}, {{ experience['location'] }}
+                  <small>{{ experience['timeperiod'] }}, {{ experience['location'] }}
                   </small>
                 </div>
               </div>
@@ -160,9 +165,9 @@
               <div class="col-md-3 bg-yellow" id="title">
                 <div class="card-body">
                   <h5>{{ edu["school"] }}</h5>
-                  <small class="text-muted">{{ edu["department"] }}</small>
+                  <small>{{ edu["department"] }}</small>
                   <br>
-                  <small class="text-muted">{{ edu["timeperiod"] }}, {{ edu["location"] }}</small>
+                  <small>{{ edu["timeperiod"] }}, {{ edu["location"] }}</small>
                 </div>
               </div>
               <div class="col-md-9" id="content">
@@ -201,7 +206,32 @@
             </li>
             {% endfor %}
           </ul> -->
+          {% for theme in resume["publications"] %}
 
+          <div class="card box-shadow transition">
+            <div class="row g-0">
+              <div class="col-md-3 bg-red" id="title">
+                <div class="card-body">
+                  <h5>{{ theme["theme"] }}</h5>
+                  <small>{{ theme["description"] }}</small>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <ul>
+                    {% for paper in theme["publications"] %}
+                    <li>
+                      {{ paper["title"] }}, {{ paper["year"] }}.
+                      <a href="{{ paper['url'] }}"><i>{{ paper['journal'] }}</i></a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          {% endfor %}
         </div>
       </div>
       <hr>

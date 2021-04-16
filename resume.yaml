@@ -95,12 +95,19 @@ education:
     department: Department of Biological Engineering
     location: Cambridge MA
     timeperiod: August 2011-May 2017
+    elaboration: |
+      I did my doctoral training under Prof. Jonathan Runstadler
+      in computational influenza evolution and ecology.
 
   - degree: Bachelor of Science (B.Sc.)
     school: The University of British Columbia
     department: Integrated Sciences
     location: Vancouver BC
     timeperiod: June 2006-May 2010
+    elaboration: |
+      I conducted gut immunology and pathology research in the laboratory of Prof. Brett Finlay
+      under the supervision of Dr. Guntram Grassl and Dr. Hongbing Yu.
+      I also founded the iGEM team at UBC under Prof. Eric Lagally.
 
 skills:
   - type: Languages and Tools
@@ -140,96 +147,92 @@ skills:
       allowing me to quickly contribute productively on a wide variety of life sciences projects.
 
 # publications section includes preprints
+# they are grouped by theme first,
+# so that all of the publications can go on a single Bootstrap card.
 publications:
-  - title: Reticulate evolution is favored in influenza niche switching
-    url: http://www.pnas.org/content/113/19/5335.full
-    journal: PNAS
-    year: 2016
-    theme: influenza
+  - theme: Data Science
+    description: Manuscripts pertaining to applied data science, and visualization.
+    publications:
+      - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
+        url: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13971
+        journal: Computer Graphics Forum
+        year: 2019
 
-  - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
-    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
-    journal: Emerging Infectious Diseases
-    year: 2017
-    theme: influenza
+      - title: "pyjanitor: A Cleaner API for Cleaning Data"
+        url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
+        journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
+        year: 2019
 
-  - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
-    url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
-    journal: Ecology Letters
-    year: 2016
-    theme: influenza
+      - title: Reimplementing UniRep in JAX
+        url: https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1
+        journal: BioRXiv
+        year: 2020
 
-  - title: Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential
-    url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
-    journal: PLOS Pathogens
-    year: 2016
-    theme: influenza
+      - title: "Functional Atlas of Primary miRNA Maturation by the Microprocessor"
+        url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
+        journal: Molecular Cell
+        year: 2020
 
-  - title: New England harbor seal H3N8 influenza virus retains avian-like receptor specificity
-    url: https://www.nature.com/articles/srep21428
-    journal: Scientific Reports
-    year: 2016
-    theme: influenza
+  - theme: Statistics
+    description: Papers where I contributed statistical analyses or developed statistical methods.
+    publications:
+      - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
+        url: https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004
+        journal: Journal of the American Association for Laboratory Animal Science
+        year: 2018
 
-  - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
-    url: https://link.springer.com/article/10.1007/s11262-014-1162-9
-    journal: Virus Genes
-    year: 2015
-    theme: influenza
+      - title: Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques
+        url: https://aem.asm.org/content/early/2018/07/09/AEM.01336-18
+        journal: Applied and Environmental Microbiology
+        year: 2018
 
-  - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
-    url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
-    journal: Infection, Genetics and Evolution
-    year: 2016
-    theme: influenza
+  - theme: Influenza
+    description: Papers pertaining to influenza evolution and ecology.
+    publications:
+      - title: Reticulate evolution is favored in influenza niche switching
+        url: http://www.pnas.org/content/113/19/5335.full
+        journal: PNAS
+        year: 2016
 
-  - title: "Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds"
-    url: http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502
-    journal: Integrative and Comparative Biology
-    year: 2016
-    theme: influenza
+      - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
+        url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
+        journal: Emerging Infectious Diseases
+        year: 2017
 
-  - title: A real-time surveillance dashboard for monitoring viral phenotype from sequence
-    url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
-    journal: International Journal of Infectious Diseases
-    year: 2016
-    theme: influenza
+      - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
+        url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
+        journal: Ecology Letters
+        year: 2016
 
-  - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
-    url: https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004
-    journal: Journal of the American Association for Laboratory Animal Science
-    year: 2018
-    theme: statistics
+      - title: Ecosystem interactions underlie the spread of avian influenza a viruses with pandemic potential
+        url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
+        journal: PLOS Pathogens
+        year: 2016
 
-  - title: Long-term colonization dynamics of Enterococcus faecalis in implanted devices in research macaques
-    url: https://aem.asm.org/content/early/2018/07/09/AEM.01336-18
-    journal: Applied and Environmental Microbiology
-    year: 2018
-    theme: statistics
+      - title: New England harbor seal H3N8 influenza virus retains avian-like receptor specificity
+        url: https://www.nature.com/articles/srep21428
+        journal: Scientific Reports
+        year: 2016
 
-  - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
-    url: https://www.biorxiv.org/content/10.1101/597518v2
-    journal: BioRXiv
-    year: 2019
-    theme: data science
+      - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
+        url: https://link.springer.com/article/10.1007/s11262-014-1162-9
+        journal: Virus Genes
+        year: 2015
 
-  - title: "pyjanitor: A Cleaner API for Cleaning Data"
-    url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
-    journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
-    year: 2019
-    theme: data science
+      - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
+        url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
+        journal: Infection, Genetics and Evolution
+        year: 2016
 
-  - title: Reimplementing UniRep in JAX
-    url: https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1
-    journal: BioRXiv
-    year: 2020
-    theme: data science
+      - title: "Evidence of seasonality in a host-pathogen system: Influenza across the annual cycle of wild birds"
+        url: http://www.sicb.org/meetings/2016/schedule/abstractdetails.php?id=502
+        journal: Integrative and Comparative Biology
+        year: 2016
 
-  - title: "Functional Atlas of Primary miRNA Maturation by the Microprocessor"
-    url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
-    journal: Molecular Cell
-    year: 2020
-    theme: data science
+      - title: A real-time surveillance dashboard for monitoring viral phenotype from sequence
+        url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
+        journal: International Journal of Infectious Diseases
+        year: 2016
 
 paper themes:
   influenza:
