@@ -135,6 +135,8 @@ skills:
       and Gaussian process models with neural tangents by Google.
       In addition, I have designed end-to-end
       efficient graph neural network data structures and models trained with JAX.
+      I am never content to rely on others' models without peering into the black box,
+      and strive to have full mastery over every model I wield.
 
   - type: Life Sciences & Chemistry
     description: Domain expertise gained during my education and prior experience.
