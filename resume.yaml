@@ -188,6 +188,11 @@ publications:
         journal: Applied and Environmental Microbiology
         year: 2018
 
+      - title: Principled decision-making workflow with hierarchical Bayesian models of high throughput dose-response measurements
+        journal: BioRXiv
+        url: none
+        year: 2021
+
   - theme: Influenza
     description: Papers pertaining to influenza surveillance, evolution and ecology.
     publications:
