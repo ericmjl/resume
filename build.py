@@ -6,6 +6,7 @@ import os
 from app import write_html, read_resume
 import shutil
 
+os.makedirs("site/", exist_ok=True)
 shutil.rmtree("site/")
 os.makedirs("site/", exist_ok=True)
 
