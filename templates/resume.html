@@ -122,6 +122,7 @@
       <div class="row" id="experience-content-row">
         <div id="experience-details">
           {% for experience in resume['experience'] %}
+          {% if experience["visible"] %}
           <div class="card box-shadow transition" id="{{ experience['company']}}-card">
             <div class="row g-0">
               <div class="col-md-3 bg-green">
@@ -142,6 +143,7 @@
             </div>
           </div>
           <br>
+          {% endif %}
           {% endfor %}
         </div>
       </div>

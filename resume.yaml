@@ -29,6 +29,7 @@ experience:
     title: Senior Expert II/Investigator III, Data Science and Statistical Learning
     location: Cambridge MA
     timeperiod: August 2020-Present
+    visible: True
     # Every "elaboration" field should be written as Markdown.
     elaboration: |
       - Investigator in the Information Products and Data Sciences (IPDS) team.
@@ -41,6 +42,7 @@ experience:
     title: Investigator II/Senior Expert I, Data Science and Statistical Learning
     location: Cambridge MA
     timeperiod: September 2018-July 2020
+    visible: True
     elaboration: |
       - Investigator in the Scientific Data Analysis (SDA) team.
       - Co-organized and developed teaching material for machine learning & deep learning workshops and seminars internally at NIBR with colleagues [Sivakumar Gowrisankar](https://www.linkedin.com/in/sivakumar-gowrisankar-b71a016/), [Yuan Wang](https://www.linkedin.com/in/yuan-wang-王元-0b19a822/), [Laszlo Urban](https://www.linkedin.com/in/laszlo-urban-4444974/), and Sean Xiao.
@@ -52,6 +54,7 @@ experience:
     title: Investigator I, Data Science & Statistical Learning
     location: Cambridge MA
     timeperiod: September 2017-August 2018
+    visible: True
     elaboration: |
       - Investigator in the Scientific Data Analysis (SDA) team.
       - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
@@ -63,6 +66,7 @@ experience:
     title: Health Data Science Fellow
     location: Boston MA
     timeperiod: June 2017-August 2017
+    visible: True
     elaboration: |
       - Built [Flu Forecaster](https://fluforecaster.herokuapp.com), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
       - Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.
@@ -73,6 +77,7 @@ experience:
     title: ScD Candidate
     location: Cambridge MA
     timeperiod: August 2011-May 2017
+    visible: True
     elaboration: |
       - Developed a scalable, network-based phylogenetic heuristic algorithm for detecting reassortant influenza viruses using 18,632 fully sequenced virus genomes that improved our capacity to detect reassortment events by two orders of magnitude.
       - The algorithm was used in a lead-author study (published in [PNAS](http://www.pnas.org/content/113/19/5335.full)) providing systematic evidence that genome shuffling is important for host switching, and a co-authored study (published in [Ecology Letters](http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract)) that showed that reassortment is a strategy for viral gene persistence in wild animal reservoirs.
@@ -84,6 +89,7 @@ experience:
     title: Undergraduate Researcher
     location: Vancouver BC
     timeperiod: June 2006-May 2010
+    visible: False
     elaboration: |
       - Investigated the role of T cells in intestinal inflammation and fibrosis in a Salmonella typhimurium-induced model of gut inflammation, leading to First Prize Poster ([Rising Stars of Research 2008](https://www.evernote.com/l/AANJS_A9iKZAMLGYqJDduTxiiI2ZNf43zHM)) and Best Talk (Multidisciplinary Undergraduate Research Conference 2009) awards.
       - Co-founded the [first UBC International Genetically Engineered Machines (iGEM) team](http://2009.igem.org/Team:British_Columbia), where we achieved a Gold status standing in our first year of competition.
