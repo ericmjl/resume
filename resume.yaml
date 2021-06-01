@@ -196,7 +196,7 @@ publications:
 
       - title: Principled decision-making workflow with hierarchical Bayesian models of high throughput dose-response measurements
         journal: BioRXiv
-        url: none
+        url: https://www.biorxiv.org/content/10.1101/2021.05.02.442325v1
         year: 2021
 
   - theme: Influenza
