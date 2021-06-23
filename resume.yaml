@@ -25,12 +25,20 @@ contact:
 
 experience:
   # Use this entry as an example that can be copied/pasted.
+  - company: Moderna
+    title: Principal Data Scientist (Research Platform)
+    location: Cambridge MA
+    timeperiod: July 2021-Present
+    visible: True
+    # Every "elaboration" field should be written as Markdown.
+    elaboration: |
+      - Research Data Science lead in Moderna's DSAI group.
+
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Senior Expert II/Investigator III, Data Science and Statistical Learning
     location: Cambridge MA
-    timeperiod: August 2020-Present
+    timeperiod: August 2020-June 2021
     visible: True
-    # Every "elaboration" field should be written as Markdown.
     elaboration: |
       - Investigator in the Information Products and Data Sciences (IPDS) team.
       - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment.
