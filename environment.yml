@@ -1,3 +1,4 @@
+# Resume development environment.
 name: resume
 channels:
   - conda-forge
@@ -12,3 +13,4 @@ dependencies:
   - black
   - pyyaml
   - markdown
+  - pre-commit

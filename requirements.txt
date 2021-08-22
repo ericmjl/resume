@@ -1,5 +1,0 @@
-# For Dokku deployment
-flask
-jinja2
-pyyaml
-Markdown
