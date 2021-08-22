@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "dokku": {
-      "predeploy": "cd /app/www && python generate_resume.py"
-    }
-  }
-}
