@@ -25,14 +25,16 @@ contact:
 
 experience:
   # Use this entry as an example that can be copied/pasted.
-  - company: Moderna
-    title: Principal Data Scientist (Research Platform)
+  - company: Moderna Therapeutics
+    title: Principal Data Scientist (Research)
     location: Cambridge MA
     timeperiod: July 2021-Present
     visible: True
     # Every "elaboration" field should be written as Markdown.
     elaboration: |
-      - Research Data Science lead in Moderna's DSAI group.
+      - Data Science lead in Moderna's DSAI group supporting applications in Moderna's research efforts.
+      - Leveraged genome graphs to accelerate mRNA engineering.
+      - Spearheaded the packaging of SeqLike, developed by colleagues, for open source release.
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Senior Expert II/Investigator III, Data Science and Statistical Learning
@@ -119,7 +121,8 @@ education:
     location: Vancouver BC
     timeperiod: June 2006-May 2010
     elaboration: |
-      I conducted gut immunology and pathology research in the laboratory of Prof. Brett Finlay
+      I conducted gut immunology and pathology research
+      in the laboratory of Prof. Brett Finlay
       under the supervision of Dr. Guntram Grassl and Dr. Hongbing Yu.
       I also founded the iGEM team at UBC under Prof. Eric Lagally.
 
