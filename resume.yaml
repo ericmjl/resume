@@ -192,6 +192,11 @@ publications:
         journal: Molecular Cell
         year: 2020
 
+      - title: "JAEGER – Hunting for Antimalarials with Generative Chemistry"
+        url: "https://chemrxiv.org/engage/chemrxiv/article-details/60f5d0b888044385cfe22cdc"
+        journal: ChemRxiv
+        year: 2021
+
   - theme: Statistics
     description: Papers where I contributed statistical analyses or developed statistical methods.
     publications:
