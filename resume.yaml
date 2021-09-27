@@ -192,6 +192,11 @@ publications:
         journal: Molecular Cell
         year: 2020
 
+      - title: "Machine-Directed Evolution of an Imine Reductase for Activity and Stereoselectivity"
+        url: https://pubs.acs.org/doi/10.1021/acscatal.1c02786
+        journal: ACS Catalysis
+        year: 2021
+
       - title: "JAEGER – Hunting for Antimalarials with Generative Chemistry"
         url: "https://chemrxiv.org/engage/chemrxiv/article-details/60f5d0b888044385cfe22cdc"
         journal: ChemRxiv
