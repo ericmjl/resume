@@ -32,9 +32,9 @@ experience:
     visible: True
     # Every "elaboration" field should be written as Markdown.
     elaboration: |
-      - Data Science lead in Moderna's DSAI group supporting applications in Moderna's research efforts.
-      - Leveraged genome graphs to accelerate mRNA engineering.
-      - Spearheaded the packaging of SeqLike, developed by colleagues, for open source release.
+      - Data Science lead in Moderna's DSAI group supporting Moderna's research.
+      - Designed research strategy efforts covering mRNA design, protein engineering, and lipid chemistry.
+      - Accelerated mRNA engineering workflows using custom genome graph-based algorithms alongside open source software ([SeqLike](https://github.com/modernatx/seqlike))
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Senior Expert II/Investigator III, Data Science and Statistical Learning
@@ -42,7 +42,7 @@ experience:
     timeperiod: August 2020-June 2021
     visible: True
     elaboration: |
-      - Investigator in the Information Products and Data Sciences (IPDS) team.
+      - Investigator in the Informatics Products and Data Sciences (IPDS) team.
       - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment.
       - Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and our intern [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
       - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
