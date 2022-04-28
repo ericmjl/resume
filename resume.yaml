@@ -32,9 +32,16 @@ experience:
     visible: True
     # Every "elaboration" field should be written as Markdown.
     elaboration: |
-      - Data Science lead in Moderna's DSAI group supporting Moderna's research.
-      - Designed research strategy efforts covering mRNA design, protein engineering, and lipid chemistry.
-      - Accelerated mRNA engineering workflows using custom genome graph-based algorithms alongside open source software ([SeqLike](https://github.com/modernatx/seqlike))
+      - Data Science lead in Moderna's DSAI group supporting Moderna's Research efforts,
+        with teammates [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/),
+        [Marcus Caron](https://www.linkedin.com/in/marcuscaron/),
+        [Zeran Li](https://www.linkedin.com/in/zeranli/),
+        [Marie Huynh](https://www.linkedin.com/in/marie-huynh-239b3621a/),
+        [Yixin Fang](https://www.linkedin.com/in/yixin-fang-5153881bb/), and
+        [Amine Abdeljaoued](https://www.linkedin.com/in/amine-abdeljaoued-317913146/).
+      - Designed strategy for, and co-led projects with teammates covering mRNA design, protein engineering, and lipid chemistry.
+      - Core maintainer of Moderna's first open source project, [SeqLike](https://github.com/modernatx/seqlike).
+      - Designed, evangelized, and continuously improved standardized data science project workflows.
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Senior Expert II/Investigator III, Data Science and Statistical Learning
