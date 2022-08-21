@@ -36,9 +36,8 @@ experience:
         with teammates [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/),
         [Marcus Caron](https://www.linkedin.com/in/marcuscaron/),
         [Zeran Li](https://www.linkedin.com/in/zeranli/),
-        [Marie Huynh](https://www.linkedin.com/in/marie-huynh-239b3621a/),
-        [Yixin Fang](https://www.linkedin.com/in/yixin-fang-5153881bb/), and
-        [Amine Abdeljaoued](https://www.linkedin.com/in/amine-abdeljaoued-317913146/).
+        [Yixin Fang](https://www.linkedin.com/in/yixin-fang-5153881bb/) (intern), and
+        [Amine Abdeljaoued](https://www.linkedin.com/in/amine-abdeljaoued-317913146/) (intern).
       - Designed strategy for, and co-led projects with teammates covering mRNA design, protein engineering, and lipid chemistry.
       - Core maintainer of Moderna's first open source project, [SeqLike](https://github.com/modernatx/seqlike).
       - Designed, evangelized, and continuously improved standardized data science project workflows.
@@ -137,10 +136,11 @@ skills:
   - type: Languages and Tools
     description: Programming languages and tools that I use in my day-to-day.
     elaboration: |
-      I have been programming in Python for over 8 years,
-      creating analyses reports in Jupyter notebooks,
-      writing tutorials on analytics packages,
-      and developing software tools for high performance computing and data visualization.
+      I have been programming in Python since 2013,
+      building tools based on machine learning models,
+      developing tutorials and reportsi n Jupyter notebooks,
+      and developing traditional software tools
+      for high performance computing and data visualization.
       My HTML and CSS skills are honed on my personal website and resume.
 
   - type: Packages
