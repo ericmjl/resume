@@ -33,11 +33,11 @@ experience:
     # Every "elaboration" field should be written as Markdown.
     # Use the pattern "Used X to solve problems Y with Z impact."
     elaboration: |
-      - Data Science lead in Moderna's DSAI group supporting applications in Moderna's research efforts.
-      - Our team supported projects impacting AI library design, computer vision, and custom software and algorithm development that saved millions of dollars in annual FTE costs through automating manual research workflows.
-      - Led the architecting and implementation of standardized data science workflows within the team, including running quarterly docathons to foster the habit of writing project documentation.
+      - Data Science lead in Moderna's DSAI group supporting Moderna's Research efforts, covering problems in mRNA design, protein engineering, and lipid nanoparticle chemistry.
+      - Our team supported projects in AI library design, computer vision, and custom software and algorithm development that saved millions of dollars in annual FTE costs through automating manual research workflows.
+      - Led the architecting and implementation of standardized data science workflows within the team, including co-organizing quarterly docathons to foster the habit of writing project documentation.
       - Mentored one Masters student [Amine Abdeljoued](https://www.linkedin.com/in/amine-abdeljaoued-317913146/) on the use of Transformers for machine back-translation of protein to mRNA.
-      - Spearheaded the packaging of SeqLike, developed by colleagues, for open source release.
+      - Core maintainer of Moderna's first open source project, [SeqLike](https://github.com/modernatx/seqlike).
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Senior Expert II/Investigator III, Data Science and Statistical Learning
@@ -45,7 +45,7 @@ experience:
     timeperiod: August 2020-June 2021
     visible: True
     elaboration: |
-      - Investigator in the Information Products and Data Sciences (IPDS) team.
+      - Investigator in the Informatics Products and Data Sciences (IPDS) team.
       - Spearheaded internal education initiatives to train colleagues on machine learning, statistical methods, and software deployment.
       - Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and our intern [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
       - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
@@ -134,10 +134,11 @@ skills:
   - type: Languages and Tools
     description: Programming languages and tools that I use in my day-to-day.
     elaboration: |
-      I have been programming in Python for over 8 years,
-      creating analyses reports in Jupyter notebooks,
-      writing tutorials on analytics packages,
-      and developing software tools for high performance computing and data visualization.
+      I have been programming in Python since 2013,
+      building tools based on machine learning models,
+      developing tutorials and reportsi n Jupyter notebooks,
+      and developing traditional software tools
+      for high performance computing and data visualization.
       My HTML and CSS skills are honed on my personal website and resume.
 
   - type: Packages
@@ -176,6 +177,11 @@ publications:
   - theme: Data Science
     description: Manuscripts pertaining to applied data science, and visualization.
     publications:
+      - title: "Graphein - a Python Library for Geometric Deep Learning and Network Analysis on Biomolecular Structures and Interaction Networks"
+        url: https://openreview.net/forum?id=nNof5wC9kD
+        journal: ICML AI4Science
+        year: 2022
+
       - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
         url: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13971
         journal: Computer Graphics Forum
@@ -195,6 +201,16 @@ publications:
         url: https://www.sciencedirect.com/science/article/pii/S1097276520307358
         journal: Molecular Cell
         year: 2020
+
+      - title: "Machine-Directed Evolution of an Imine Reductase for Activity and Stereoselectivity"
+        url: https://pubs.acs.org/doi/10.1021/acscatal.1c02786
+        journal: ACS Catalysis
+        year: 2021
+
+      - title: "JAEGER – Hunting for Antimalarials with Generative Chemistry"
+        url: "https://chemrxiv.org/engage/chemrxiv/article-details/60f5d0b888044385cfe22cdc"
+        journal: ChemRxiv
+        year: 2021
 
   - theme: Statistics
     description: Papers where I contributed statistical analyses or developed statistical methods.

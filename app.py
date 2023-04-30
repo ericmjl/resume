@@ -3,7 +3,6 @@ import yaml
 from flask import Flask, Markup, redirect, render_template
 from jinja2 import Template
 from markdown import markdown as md
-import click
 
 app = Flask(__name__)
 

@@ -4,13 +4,14 @@
         "context": ".."
     },
     "extensions": [
-        "ms-azuretools.vscode-docker",
-        "ms-toolsai.jupyter",
-        "arcticicestudio.nord-visual-studio-code",
-        "ms-python.vscode-pylance",
-        "ms-python.python",
-        "redhat.vscode-yaml",
-    ],
+		"ms-azuretools.vscode-docker",
+		"ms-toolsai.jupyter",
+		"arcticicestudio.nord-visual-studio-code",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"redhat.vscode-yaml",
+		"eamodio.gitlens"
+	],
     "forwardPorts": [
         3000,
         5657,
