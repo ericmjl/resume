@@ -31,9 +31,12 @@ experience:
     timeperiod: July 2021-Present
     visible: True
     # Every "elaboration" field should be written as Markdown.
+    # Use the pattern "Used X to solve problems Y with Z impact."
     elaboration: |
       - Data Science lead in Moderna's DSAI group supporting applications in Moderna's research efforts.
-      - Leveraged genome graphs to accelerate mRNA engineering.
+      - Our team supported projects impacting AI library design, computer vision, and custom software and algorithm development that saved millions of dollars in annual FTE costs through automating manual research workflows.
+      - Led the architecting and implementation of standardized data science workflows within the team, including running quarterly docathons to foster the habit of writing project documentation.
+      - Mentored one Masters student [Amine Abdeljoued](https://www.linkedin.com/in/amine-abdeljaoued-317913146/) on the use of Transformers for machine back-translation of protein to mRNA.
       - Spearheaded the packaging of SeqLike, developed by colleagues, for open source release.
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
@@ -47,6 +50,7 @@ experience:
       - Built a generalized autoregressive hidden Markov model package to automatically learn latent motion states of mouse behaviour, with [Zach Barry](https://www.linkedin.com/in/zacharybarry/) and our intern [Nitin Kumar Mittal](https://www.linkedin.com/in/nitin-kumar-mittal-994186a6/).
       - Built graph neural network model to predict protein liabilities with [Mei Xiao](https://www.linkedin.com/in/mei-xiao-8022a85/) and [Kannan Sankar](https://www.linkedin.com/in/kannansankar/).
       - Built Suzuki chemical reaction recommendation and optimization engine with [Cihan Soylu](https://www.linkedin.com/in/cihan-soylu/), [Mike Fortunato](https://www.linkedin.com/in/mike-fortunato-a9500a58/), and [John Lopez](https://www.linkedin.com/in/john-lopez-9540a65/) leveraging internal and external data.
+      - Mentored one Masters thesis student [Arkadij Kummer](https://www.linkedin.com/in/arkadij-kummer-78b249b9/) on probabilistic models for antibody engineering.
 
   - company: Novartis Institutes for Biomedical Research (NIBR)
     title: Investigator II/Senior Expert I, Data Science and Statistical Learning
