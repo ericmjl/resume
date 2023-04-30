@@ -3,9 +3,10 @@ name: Eric J. Ma
 headshot: headshot.jpg
 
 contact:
-  - name: Email
-    href: http://shortwhale.com/ericmjl
-    icon: fa-envelope
+  # Commented out until I find a replacement for shortwhale.
+  # - name: Email
+  #   href: http://shortwhale.com/ericmjl
+  #   icon: fa-envelope
 
   - name: Website
     href: https://ericmjl.github.io/
@@ -72,7 +73,7 @@ experience:
     elaboration: |
       - Investigator in the Scientific Data Analysis (SDA) team.
       - Performed internal consulting projects and expanded the SDA Statistical Learning initiative with colleagues.
-      - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC3](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
+      - Developed parameterized Bayesian agent-based models of internal project portfolio for scenario planning purposes, using [PyMC](http://docs.pymc.io) and [Mesa](https://github.com/projectmesa/mesa).
       - Assisted in the analysis of high throughput DROSHA cleavage data.
       - Assisted in mentoring two interns, [Stacy Meichle](https://www.linkedin.com/in/stacy-meichle/) (Computer Aided Drug Discovery with [Clayton Springer](https://www.linkedin.com/in/clayton-springer-5a48072/)) and [Fritz Lekschas](https://www.linkedin.com/in/flekschas/) (SDA with [Brant Peterson](https://www.linkedin.com/in/brant-peterson-b390a51/)).
 
@@ -136,7 +137,7 @@ skills:
     elaboration: |
       I have been programming in Python since 2013,
       building tools based on machine learning models,
-      developing tutorials and reportsi n Jupyter notebooks,
+      developing tutorials and reports in Jupyter notebooks,
       and developing traditional software tools
       for high performance computing and data visualization.
       My HTML and CSS skills are honed on my personal website and resume.
@@ -144,19 +145,20 @@ skills:
   - type: Packages
     description: Specific Python packages that I have proficiency with.
     elaboration: |
-      I am a core developer of pyjanitor, PyMC3 and NetworkX.
+      I am a core developer of pyjanitor, PyMC and NetworkX.
       I have also made open source contributions to Matplotlib and Bokeh.
-      My tutorial collection covers JAX & NumPy, PyMC3, and NetworkX for analytics
+      My tutorial collection covers JAX & NumPy, PyMC, and NetworkX for analytics
       and pytest/pandera for software and data testing.
 
   - type: ML/Stats
     description: Concepts and ideas that I am comfortable addressing questions on.
     elaboration: |
       I have experience developing bespoke Bayesian models,
-      including Bayesian neural networks in PyMC3
+      including Bayesian neural networks in PyMC
       and Gaussian process models with neural tangents by Google.
       In addition, I have designed end-to-end
-      efficient graph neural network data structures and models trained with JAX.
+      efficient graph neural network data structures and models trained with JAX,
+      and have architected and built machine learning systems on top of PyTorch.
       I am never content to rely on others' models without peering into the black box,
       and strive to have full mastery over every model I wield.
 
