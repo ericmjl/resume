@@ -7,10 +7,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v3
 
+      # https://github.com/actions/setup-python
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: "3.8"
 
@@ -22,8 +24,9 @@ jobs:
         id: pip-cache
         run: echo "::set-output name=dir::$(pip cache dir)"
 
+      # https://github.com/actions/cache
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ steps.pip-cache.outputs.dir }}
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -34,6 +37,7 @@ jobs:
 
       - run: python build.py
 
+      # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
