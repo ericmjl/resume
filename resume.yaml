@@ -35,7 +35,7 @@ experience:
     # Use the pattern "Used X to solve problems Y with Z impact."
     elaboration: |
       - Data Science lead in Moderna's DSAI group supporting Moderna's Research efforts, covering problems in mRNA design, protein engineering, and lipid nanoparticle chemistry.
-      - Our team of six supports projects in AI library design, computer vision, and custom software and algorithm development that saved millions of dollars in annual FTE costs through automating manual research workflows.
+      - Our team of six supports projects in AI library design, computer vision, and custom software and algorithm development that saved millions of dollars in annual FTE costs through automating manual research workflows and enriching the data obtained from existing data.
       - Led the architecting and implementation of standardized data science workflows within the team, including co-organizing quarterly docathons to foster the habit of writing project documentation.
       - Core maintainer of Moderna's first open source project, [SeqLike](https://github.com/modernatx/seqlike).
 
