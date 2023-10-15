@@ -1,6 +1,7 @@
 """Simple flask app to preview resume."""
 import yaml
-from flask import Flask, Markup, redirect, render_template
+from flask import Flask, redirect, render_template
+from markupsafe import Markup
 from jinja2 import Template
 from markdown import markdown as md
 
