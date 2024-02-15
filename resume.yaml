@@ -178,6 +178,11 @@ publications:
   - theme: Data Science
     description: Manuscripts pertaining to applied data science, and visualization.
     publications:
+      - title: "mtx-COBRA: Subcellular localization prediction for bacterial proteins"
+        url: https://www.sciencedirect.com/science/article/abs/pii/S0010482524001987
+        journal: Computers in Biology and Medicine
+        year: 2024
+
       - title: "Graphein - a Python Library for Geometric Deep Learning and Network Analysis on Biomolecular Structures and Interaction Networks"
         url: https://openreview.net/forum?id=nNof5wC9kD
         journal: ICML AI4Science
