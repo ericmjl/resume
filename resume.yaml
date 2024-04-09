@@ -26,17 +26,31 @@ contact:
 
 experience:
   # Use this entry as an example that can be copied/pasted.
-  - company: Moderna Therapeutics
+  - company: Moderna Inc.
+    title: Senior Principal Data Scientist (Research)
+    location: Cambridge MA
+    timeperiod: April 2024-Present
+    visible: True
+    # Every "elaboration" field should be written as Markdown.
+    # Use the pattern "Used X to solve problems Y with Z impact."
+    elaboration: |
+      - Data Science lead in Moderna's Digital for Research organization supporting Moderna's Research efforts, covering problems in mRNA design, protein engineering, and lipid nanoparticle chemistry.
+      - Our team accelerates science to the speed of thought and quantifies the previously unquantified.
+      - Our team of six builds API-callable, artificial intelligence-powered software products for use AI library design, computer vision, and custom software and algorithm development.
+      - Co-organizer of work-in-progress seminar series to encourage Pixar-like early stage discussion of work and cross-functional collaboration.
+      - Primary maintainer of internal deployment of AlphaFold.
+
+  - company: Moderna Inc.
     title: Principal Data Scientist (Research)
     location: Cambridge MA
-    timeperiod: July 2021-Present
+    timeperiod: July 2021-March 2024
     visible: True
     # Every "elaboration" field should be written as Markdown.
     # Use the pattern "Used X to solve problems Y with Z impact."
     elaboration: |
       - Data Science lead in Moderna's DSAI group supporting Moderna's Research efforts, covering problems in mRNA design, protein engineering, and lipid nanoparticle chemistry.
       - Our team of six supports projects in AI library design, computer vision, and custom software and algorithm development that saved millions of dollars in annual FTE costs through automating manual research workflows and enriching the data obtained from existing data.
-      - Architedted and implementated standardized data science workflows within the team
+      - Architected and implementated standardized data science workflows for the broader team.
       - Co-organized quarterly docathons to foster the habit of writing project documentation.
       - Core maintainer of Moderna's first open source project, [SeqLike](https://github.com/modernatx/seqlike).
 
@@ -83,7 +97,7 @@ experience:
     timeperiod: June 2017-August 2017
     visible: True
     elaboration: |
-      - Built [Flu Forecaster](https://fluforecaster.herokuapp.com), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
+      - Built [Flu Forecaster](https://flu-forecaster.ericmjl.com/), a machine learning-powered system that forecasts flu sequences six months out, to better prepare for manufacturing of vaccine strains.
       - Implemented a variational autoencoder (deep learning model) to learn a continuous representation of 14,455 influenza hemagglutinin protein sequences, and trained a Gaussian process model on the continuous representation to predict new flu sequences.
       - Developed interactive blog post using Flask and Bootstrap, and deployed to Heroku and GitHub.
       - Led peer workshops on [web development](https://github.com/ericmjl/minimal-flask-example), deep learning and [code style](https://github.com/ericmjl/pycodestyle-tutorial).
@@ -179,6 +193,11 @@ publications:
   - theme: Data Science
     description: Manuscripts pertaining to applied data science, and visualization.
     publications:
+      - title: "Forecasting SARS-CoV-2 spike protein evolution from small data by deep learning and regression"
+        url: https://www.frontiersin.org/articles/10.3389/fsysb.2024.1284668/full?&field=&journalName=Frontiers_in_Systems_Biology&id=1284668
+        journal: Frontiers in Systems Biology
+        year: 2024
+
       - title: "mtx-COBRA: Subcellular localization prediction for bacterial proteins"
         url: https://www.sciencedirect.com/science/article/abs/pii/S0010482524001987
         journal: Computers in Biology and Medicine
@@ -189,15 +208,15 @@ publications:
         journal: ICML AI4Science
         year: 2022
 
-      - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
-        url: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13971
-        journal: Computer Graphics Forum
-        year: 2019
+      - title: "JAEGER – Hunting for Antimalarials with Generative Chemistry"
+        url: "https://chemrxiv.org/engage/chemrxiv/article-details/60f5d0b888044385cfe22cdc"
+        journal: ChemRxiv
+        year: 2021
 
-      - title: "pyjanitor: A Cleaner API for Cleaning Data"
-        url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
-        journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
-        year: 2019
+      - title: "Machine-Directed Evolution of an Imine Reductase for Activity and Stereoselectivity"
+        url: https://pubs.acs.org/doi/10.1021/acscatal.1c02786
+        journal: ACS Catalysis
+        year: 2021
 
       - title: Reimplementing UniRep in JAX
         url: https://www.biorxiv.org/content/10.1101/2020.05.11.088344v1
@@ -209,19 +228,24 @@ publications:
         journal: Molecular Cell
         year: 2020
 
-      - title: "Machine-Directed Evolution of an Imine Reductase for Activity and Stereoselectivity"
-        url: https://pubs.acs.org/doi/10.1021/acscatal.1c02786
-        journal: ACS Catalysis
-        year: 2021
+      - title: "Peax: Interactive Visual Pattern Search in Sequential Data Using Unsupervised Deep Representation Learning"
+        url: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.13971
+        journal: Computer Graphics Forum
+        year: 2019
 
-      - title: "JAEGER – Hunting for Antimalarials with Generative Chemistry"
-        url: "https://chemrxiv.org/engage/chemrxiv/article-details/60f5d0b888044385cfe22cdc"
-        journal: ChemRxiv
-        year: 2021
+      - title: "pyjanitor: A Cleaner API for Cleaning Data"
+        url: https://pdfs.semanticscholar.org/7b96/42a31f805a7c9584b2e6f6b08576a1e029f7.pdf
+        journal: Proceedings of the 18th Python in Science Conference (SciPy 2019)
+        year: 2019
 
   - theme: Statistics
     description: Papers where I contributed statistical analyses or developed statistical methods.
     publications:
+      - title: Principled decision-making workflow with hierarchical Bayesian models of high throughput dose-response measurements
+        journal: Entropy
+        url: https://www.mdpi.com/1099-4300/23/6/727
+        year: 2021
+
       - title: Evaluation of 6 Methods for Aerobic Bacterial Sanitization of Smartphones
         url: https://www.ingentaconnect.com/content/aalas/jaalas/2018/00000057/00000001/art00004
         journal: Journal of the American Association for Laboratory Animal Science
@@ -232,23 +256,18 @@ publications:
         journal: Applied and Environmental Microbiology
         year: 2018
 
-      - title: Principled decision-making workflow with hierarchical Bayesian models of high throughput dose-response measurements
-        journal: Entropy
-        url: https://www.mdpi.com/1099-4300/23/6/727
-        year: 2021
-
   - theme: Influenza
     description: Papers pertaining to influenza surveillance, evolution and ecology.
     publications:
-      - title: Reticulate evolution is favored in influenza niche switching
-        url: http://www.pnas.org/content/113/19/5335.full
-        journal: Proceedings of the National Academies of Science
-        year: 2016
-
       - title: Reassortment of influenza A viruses in wild birds in Alaska before H5 clade 2.3. 4.4 outbreaks
         url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367406/
         journal: Emerging Infectious Diseases
         year: 2017
+
+      - title: Reticulate evolution is favored in influenza niche switching
+        url: http://www.pnas.org/content/113/19/5335.full
+        journal: Proceedings of the National Academies of Science
+        year: 2016
 
       - title: Transmission of influenza reflects seasonality of wild birds across the annual cycle
         url: http://onlinelibrary.wiley.com/doi/10.1111/ele.12629/abstract
@@ -265,11 +284,6 @@ publications:
         journal: Scientific Reports
         year: 2016
 
-      - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
-        url: https://link.springer.com/article/10.1007/s11262-014-1162-9
-        journal: Virus Genes
-        year: 2015
-
       - title: A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells
         url: https://www.sciencedirect.com/science/article/pii/S156713481630137X
         journal: Infection, Genetics and Evolution
@@ -284,3 +298,8 @@ publications:
         url: http://www.ijidonline.com/article/S1201-9712(16)31510-7/abstract
         journal: International Journal of Infectious Diseases
         year: 2016
+
+      - title: "Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan"
+        url: https://link.springer.com/article/10.1007/s11262-014-1162-9
+        journal: Virus Genes
+        year: 2015
