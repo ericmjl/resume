@@ -102,3 +102,6 @@ ENV/
 
 # Custom
 index.html
+
+# SQLite database
+message_log.db
